@@ -1,0 +1,25 @@
+<template>
+  <div id="about" class="container">
+    <p v-for="paragraph in paragraphs">{{ paragraph }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'hello',
+  data: () => ({
+    paragraphs: [
+      'OpenRefuge began with a small group of people who wanted to learn more about the refugee crisis and its impact on Athens, Greece. When they arrived and began digging into the issue, it became clear the situation was much more widespread and needed international attention.',
+      'Poorly handled by the governments of most of the world, forced out of their homes by many of the same, refugees are in a desparate situation, as are the companies who want to assist them.',
+      'With your help, OpenRefuge can provide food, shelter, medicine, homes and hope to people ravaged by the the greed of a war driven economy.',
+      'Refugees and those who wish to support are welcome with open arms. Please use the resources we have provided here to best do what you can, and please contact us if you would like to learn more, help, or join the OpenRefuge team.'
+    ]
+  })
+}
+</script>
+
+<style scoped>
+#about {
+  text-align: justify;
+}
+</style>
