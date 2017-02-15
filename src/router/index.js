@@ -14,6 +14,11 @@ export default new Router({
       path: '/refugees',
       name: 'Refugees',
       component: require('components/views/Refugees')
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: require('components/views/About')
     }
   ]
 })

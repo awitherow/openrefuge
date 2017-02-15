@@ -29,5 +29,7 @@ export default {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
 }
 </style>

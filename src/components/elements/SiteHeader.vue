@@ -24,6 +24,10 @@ export default {
       {
         text: 'Supporters',
         to: '/supporters'
+      },
+      {
+        text: 'About',
+        to: '/about'
       }
     ]
   })
