@@ -1,7 +1,7 @@
 <template>
   <div id="refugees" class="container">
     <div v-for="item in infoBoxes">
-      {{ item.text }}
+      {{ item.title }}
     </div>
   </div>
 </template>
@@ -9,19 +9,11 @@
 <script>
 export default {
   name: 'hello',
-  data: () => ({
-    infoBoxes: [
-      {
-        text: 'Local'
-      },
-      {
-        text: 'Online'
-      },
-      {
-        text: 'Suggest'
-      }
-    ]
-  })
+  data () {
+    return {
+      infoBoxes: this.$t('views.refugees.infoBoxes')
+    }
+  }
 }
 </script>
 
