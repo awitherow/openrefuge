@@ -4,6 +4,16 @@ export default {
       'title': 'OpenRefuge',
       'subtitle': 'Welcoming refugees with open arms'
     },
+    'elements': {
+      'SiteHeader': {
+        'linkList': {
+          'home': 'Home',
+          'refugees': 'Refugees',
+          'supporters': 'Supporters',
+          'about': 'About'
+        }
+      }
+    },
     'views': {
       'hello': {
         'button-seek_help': 'Seek help',
