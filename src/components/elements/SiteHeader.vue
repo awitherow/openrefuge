@@ -28,6 +28,10 @@ export default {
       {
         text: 'About',
         to: '/about'
+      },
+      {
+        text: 'Contact',
+        to: '/contact'
       }
     ]
   })
