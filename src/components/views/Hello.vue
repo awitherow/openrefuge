@@ -6,10 +6,10 @@
       <h2>{{ $t("brand.subtitle") }}</h2>
 
       <div class="button-container">
-        <router-link to="/refugees">
+        <router-link class="button-link" to="/refugees">
           {{ $t("views.hello.button-seek_help") }}
         </router-link>
-        <router-link to="/support">
+        <router-link class="button-link" to="/support">
           {{ $t("views.hello.button-provide_support") }}
         </router-link>
       </div>
@@ -30,12 +30,15 @@ export default {
   text-align: center;
 }
 
-button {
+.button-link {
   border: 1px solid black;
   padding: 10px;
   background: none;
   text-transform: uppercase;
   min-width: 100px;
   margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
 }
 </style>
