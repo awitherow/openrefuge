@@ -1,12 +1,19 @@
 <template>
   <div id="hello" class="container">
     <div class="centered">
-      <h1>{{ title }}</h1>
-      <h2>{{ subtitle }}</h2>
+
+      <h1>{{ $t("brand.title") }}</h1>
+      <h2>{{ $t("brand.subtitle") }}</h2>
+
       <div class="button-container">
-        <router-link class="button-link" to="/refugees">Seek help</router-link>
-        <router-link class="button-link" to="/support">Provide support</router-link>
+        <router-link class="button-link" to="/refugees">
+          {{ $t("views.hello.button-seek_help") }}
+        </router-link>
+        <router-link class="button-link" to="/support">
+          {{ $t("views.hello.button-provide_support") }}
+        </router-link>
       </div>
+
     </div>
   </div>
 </template>
@@ -14,10 +21,7 @@
 <script>
 export default {
   name: 'hello',
-  data: () => ({
-    title: 'Open Refuge',
-    subtitle: 'Welcoming refugees with open arms'
-  })
+  data: () => ({})
 }
 </script>
 

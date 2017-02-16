@@ -11,26 +11,28 @@
 <script>
 export default {
   name: 'SiteHeader',
-  data: () => ({
-    linkList: [
-      {
-        text: 'Home',
-        to: '/'
-      },
-      {
-        text: 'Refugees',
-        to: '/refugees'
-      },
-      {
-        text: 'Supporters',
-        to: '/supporters'
-      },
-      {
-        text: 'About',
-        to: '/about'
-      }
-    ]
-  })
+  data () {
+    return {
+      linkList: [
+        {
+          text: this.$t('elements.SiteHeader.linkList.home'),
+          to: '/'
+        },
+        {
+          text: this.$t('elements.SiteHeader.linkList.refugees'),
+          to: '/refugees'
+        },
+        {
+          text: this.$t('elements.SiteHeader.linkList.supporters'),
+          to: '/supporters'
+        },
+        {
+          text: this.$t('elements.SiteHeader.linkList.about'),
+          to: '/about'
+        }
+      ]
+    }
+  }
 }
 </script>
 
