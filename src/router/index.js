@@ -13,7 +13,25 @@ export default new Router({
     {
       path: '/refugees',
       name: 'Refugees',
-      component: require('components/views/Refugees')
+      component: require('components/views/Refugees/index.vue'),
+      children: [
+        {
+          path: '',
+          component: require('components/views/Refugees/home')
+        },
+        {
+          path: 'local',
+          component: require('components/views/Refugees/local')
+        },
+        {
+          path: 'online',
+          component: require('components/views/Refugees/online')
+        },
+        {
+          path: 'help',
+          component: require('components/views/Refugees/help')
+        }
+      ]
     },
     {
       path: '/about',
