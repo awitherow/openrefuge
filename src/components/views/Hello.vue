@@ -30,12 +30,15 @@ export default {
   text-align: center;
 }
 
-button {
+.button-link {
   border: 1px solid black;
   padding: 10px;
   background: none;
   text-transform: uppercase;
   min-width: 100px;
   margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
 }
 </style>
