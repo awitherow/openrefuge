@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <SiteHeader />
-    <router-view></router-view>
+    <transition name="fade">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -31,5 +33,17 @@ export default {
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
