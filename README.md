@@ -14,16 +14,16 @@ The aim of this site is to create a portal for refugees to find information they
 
 ``` bash
 # install dependencies
-yarn install
+yarn install (npm run install)
 
 # serve with hot reload at localhost:8080
-yarn dev
+yarn dev (npm run dev)
 
 # build for production with minification
-yarn build
+yarn build (npm run build)
 
 # build for production and view the bundle analyzer report
-yarn build --report
+npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
