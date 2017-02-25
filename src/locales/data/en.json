@@ -7,8 +7,8 @@
     "SiteHeader": {
       "linkList": {
         "home": "Home",
-        "refugees": "Refugees",
-        "supporters": "Supporters",
+        "find-help": "Find Help",
+        "support": "Get Involved",
         "about": "About"
       }
     }
