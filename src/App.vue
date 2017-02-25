@@ -23,16 +23,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height: 100vh;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
+  padding: 15px;
 }
 
 .fade-enter-active, .fade-leave-active {

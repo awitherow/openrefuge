@@ -18,5 +18,25 @@ export default {
 <style scoped>
 #about {
   text-align: justify;
+  max-width: 600px;
+  padding-top: 100px;
+}
+
+@media(min-width: 375px) {
+  #about {
+    padding-top: 65px;
+  }
+}
+
+@media(min-width: 425px) {
+  #about {
+    padding-top: 40px;
+  }
+}
+
+@media(min-width: 768px) {
+  #about {
+    padding-top: 0;
+  }
 }
 </style>
