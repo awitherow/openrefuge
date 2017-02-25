@@ -2,7 +2,7 @@
   <header>
     <ul class="site-links">
       <li v-for="item in linkList">
-        <router-link :to="item.to">{{ item.text }}</router-link>
+        <router-link exact :to="item.to">{{ item.text }}</router-link>
       </li>
     </ul>
   </header>
@@ -50,5 +50,15 @@ header {
 .site-links li {
   display: inline-block;
   padding: 0 8px;
+}
+
+.site-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-links li a.router-link-active {
+  color: green;
+  text-decoration: underline;
 }
 </style>
