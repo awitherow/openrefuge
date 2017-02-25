@@ -19,17 +19,11 @@
       "button-provide_support": "Provide support"
     },
     "refugees": {
-      "infoBoxes": [
-        {
-          "title": "Local"
-        },
-        {
-          "title": "Online"
-        },
-        {
-          "title": "Ask for help"
+      "links": {
+          "local": "Local",
+          "online": "Online",
+          "help": "Ask for Help"
         }
-      ]
     },
     "about": {
       "paragraphs": [
