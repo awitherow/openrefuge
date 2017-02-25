@@ -78,6 +78,8 @@ The aim of this site is to create a portal for refugees to find information they
 
 ## development
 
+If you would like to work on this, please shoot me an email: contactopenrefuge@gmail.com
+
 ``` bash
 # install dependencies
 yarn install
