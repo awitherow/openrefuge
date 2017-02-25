@@ -1,5 +1,8 @@
 <template>
   <header>
+    <div class="logo-container">
+      <div class="logo"></div>
+    </div>
     <ul class="site-links">
       <li v-for="item in linkList">
         <router-link exact :to="item.to">{{ item.text }}</router-link>
@@ -40,6 +43,16 @@ export default {
 header {
   position: absolute;
   z-index: 9;
+
+.logo-container {
+  min-width: 50px;
+  margin-right: 25px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  background: black;
 }
 
 .site-links {
