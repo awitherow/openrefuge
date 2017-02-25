@@ -1,0 +1,7 @@
+{
+  "name": "OpenRefuge",
+  "description": "Using heroku to welcome all in need of refuge with open arms",
+  "repository": "https://github.com/openrefuge/openrefuge",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
