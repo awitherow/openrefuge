@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SiteHeader />
+    <site-header />
     <transition name="fade">
       <router-view></router-view>
     </transition>
@@ -12,7 +12,7 @@ import SiteHeader from './components/elements/SiteHeader'
 export default {
   name: 'app',
   components: {
-    SiteHeader
+    'site-header': SiteHeader
   }
 }
 </script>
