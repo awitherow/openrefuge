@@ -15,7 +15,8 @@
     "compression-webpack-plugin": "^0.3.2",
     "vue": "^2.1.10",
     "vue-i18n": "^5.0.2",
-    "vue-router": "^2.2.0"
+    "vue-router": "^2.2.0",
+    "vue2-google-maps": "^0.5.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
