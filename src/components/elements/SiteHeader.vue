@@ -43,6 +43,10 @@ export default {
 header {
   position: absolute;
   z-index: 9;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
 
 .logo-container {
   min-width: 50px;
@@ -57,7 +61,8 @@ header {
 
 .site-links {
   list-style: none;
-  padding: 0 25px;
+  padding: 0;
+  margin: 0;
 }
 
 .site-links li {
@@ -73,5 +78,15 @@ header {
 .site-links li a.router-link-active {
   color: green;
   text-decoration: underline;
+}
+
+@media(max-width: 425px) {
+  header {
+    padding: 15px;
+  }
+
+  .site-links li a {
+    font-size: 14px;
+  }
 }
 </style>
