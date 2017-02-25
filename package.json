@@ -9,7 +9,8 @@
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
     "docs": "cd docs && gitbook serve",
-    "docs:deploy": "bash ./deploy-docs.sh"
+    "docs:deploy": "bash ./deploy-docs.sh",
+    "start": "node server.js"
   },
   "dependencies": {
     "compression": "^1.6.2",
