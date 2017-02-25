@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'find-help',
   data () {
     return {
       infoBoxes: this.$t('views.refugees.infoBoxes')

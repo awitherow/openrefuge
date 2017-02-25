@@ -7,13 +7,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
+      name: 'hello',
       component: require('components/views/Hello')
     },
     {
-      path: '/refugees',
-      name: 'Refugees',
-      component: require('components/views/Refugees')
+      path: '/find-help',
+      name: 'find-help',
+      component: require('components/views/Find')
     },
     {
       path: '/about',

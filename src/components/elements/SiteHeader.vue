@@ -22,11 +22,11 @@ export default {
           to: '/'
         },
         {
-          text: this.$t('elements.SiteHeader.linkList.refugees'),
-          to: '/refugees'
+          text: this.$t('elements.SiteHeader.linkList.find-help'),
+          to: '/find-help'
         },
         {
-          text: this.$t('elements.SiteHeader.linkList.supporters'),
+          text: this.$t('elements.SiteHeader.linkList.support'),
           to: '/supporters'
         },
         {
