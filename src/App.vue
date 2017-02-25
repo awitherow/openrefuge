@@ -34,7 +34,7 @@ export default {
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .fade-enter-active, .fade-leave-active {
