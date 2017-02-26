@@ -7,29 +7,16 @@
     "SiteHeader": {
       "linkList": {
         "home": "Home",
-        "find-help": "Find Help",
-        "support": "Get Involved",
+        "find_help": "Find Help",
+        "take_action": "Take Action",
         "about": "About"
       }
     }
   },
   "views": {
     "hello": {
-      "button-seek_help": "Seek help",
-      "button-provide_support": "Provide support"
-    },
-    "refugees": {
-      "infoBoxes": [
-        {
-          "title": "Local"
-        },
-        {
-          "title": "Online"
-        },
-        {
-          "title": "Ask for help"
-        }
-      ]
+      "button-find_help": "Find Help",
+      "button-take_action": "Take Action"
     },
     "about": {
       "paragraphs": [
