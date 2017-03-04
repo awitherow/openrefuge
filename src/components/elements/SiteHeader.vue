@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo-container">
-      <div class="logo"></div>
+      <div class="logo">^</div>
     </div>
     <ul class="site-links">
       <li v-for="item in linkList">
@@ -51,13 +51,15 @@ header {
 
 .logo-container {
   min-width: 50px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .logo {
   height: 60px;
   width: 60px;
-  background: black;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .site-links {
