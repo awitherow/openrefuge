@@ -22,12 +22,12 @@ export default {
           to: '/'
         },
         {
-          text: this.$t('elements.SiteHeader.linkList.find-help'),
+          text: this.$t('elements.SiteHeader.linkList.find_help'),
           to: '/find-help'
         },
         {
-          text: this.$t('elements.SiteHeader.linkList.support'),
-          to: '/supporters'
+          text: this.$t('elements.SiteHeader.linkList.take_action'),
+          to: '/take-action'
         },
         {
           text: this.$t('elements.SiteHeader.linkList.about'),

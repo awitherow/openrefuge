@@ -1,7 +1,8 @@
 <template>
-  <div id="refugees" class="container">
-    <div v-for="item in infoBoxes">
-      {{ item.title }}
+  <div id="find-help" class="container centered">
+    <div>
+      <p v-html="github" />
+      <p v-html="takeAction" />
     </div>
   </div>
 </template>
@@ -11,7 +12,8 @@ export default {
   name: 'find-help',
   data () {
     return {
-      infoBoxes: this.$t('views.refugees.infoBoxes')
+      github: this.$t('views.find-help.paragraphs')[0],
+      takeAction: this.$t('views.find-help.paragraphs')[1]
     }
   }
 }

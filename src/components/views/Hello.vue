@@ -6,11 +6,11 @@
       <h2>{{ $t("brand.subtitle") }}</h2>
 
       <div class="button-container">
-        <router-link class="button-link green" to="/refugees">
-          {{ $t("views.hello.button-seek_help") }}
+        <router-link class="button-link green" to="/find-help">
+          {{ $t("views.hello.button-find_help") }}
         </router-link>
-        <router-link class="button-link" to="/support">
-          {{ $t("views.hello.button-provide_support") }}
+        <router-link class="button-link" to="/take-action">
+          {{ $t("views.hello.button-take_action") }}
         </router-link>
       </div>
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 .button-link.green {
-  border-color: #3fb618;
+  border-color: #0C8300;
   background: #3fb618;
   color: white;
 }
