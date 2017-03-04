@@ -25,6 +25,12 @@
         "With your help, OpenRefuge can provide food, shelter, medicine, homes and hope to people ravaged by the the greed of a war driven economy.",
         "Refugees and those who wish to support are welcome with open arms. Please use the resources we have provided here to best do what you can, and please contact us if you would like to learn more, help, or join the OpenRefuge team."
       ]
+    },
+    "find-help": {
+      "paragraphs": [
+        "We are trying really hard to develop this page into an interactive map and events list. If you have any web development knowledge, we would love your help. Check our open source repository at <a href='http://www.github.com/openrefuge'>http://www.github.com/openrefuge</a>.",
+        "If you cannot help with development, please look at the other areas we need help with on the 'Take Action' page. Thank you!."
+      ]
     }
   }
 }
