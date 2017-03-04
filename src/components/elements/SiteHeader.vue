@@ -79,7 +79,7 @@ header {
 }
 
 .site-links li a.router-link-active {
-  color: green;
+  color: #3fb618;
   text-decoration: underline;
 }
 
