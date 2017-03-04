@@ -56,7 +56,7 @@ h2 {
 }
 
 .button-link.green {
-  border-color: #3fb618;
+  border-color: #0C8300;
   background: #3fb618;
   color: white;
 }
