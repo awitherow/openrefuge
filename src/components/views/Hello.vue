@@ -26,8 +26,21 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 .centered {
   text-align: center;
+}
+
+.button-container {
+  min-height: 64px;
 }
 
 .button-link {
