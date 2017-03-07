@@ -41,8 +41,6 @@ export default {
 
 <style scoped>
 header {
-  position: absolute;
-  z-index: 9;
   display: flex;
   align-items: center;
   padding: 25px;
