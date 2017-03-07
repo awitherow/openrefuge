@@ -16,6 +16,11 @@ export default new Router({
       component: require('components/views/Find')
     },
     {
+      path: '/take-action',
+      name: 'take-action',
+      component: require('components/views/Action')
+    },
+    {
       path: '/about',
       name: 'About',
       component: require('components/views/About')
