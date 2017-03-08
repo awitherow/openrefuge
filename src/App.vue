@@ -30,7 +30,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;

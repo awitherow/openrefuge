@@ -1,14 +1,16 @@
 <template>
-  <header>
-    <div class="logo-container">
-      <div class="logo">^</div>
-    </div>
-    <ul class="site-links">
-      <li v-for="item in linkList">
-        <router-link exact :to="item.to">{{ item.text }}</router-link>
-      </li>
-    </ul>
-  </header>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <div class="logo">^</div>
+      </div>
+      <ul class="site-links">
+        <li v-for="item in linkList">
+          <router-link exact :to="item.to">{{ item.text }}</router-link>
+        </li>
+      </ul>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -22,16 +24,16 @@ export default {
           to: '/'
         },
         {
+          text: this.$t('elements.SiteHeader.linkList.about'),
+          to: '/about'
+        },
+        {
           text: this.$t('elements.SiteHeader.linkList.find_help'),
           to: '/find-help'
         },
         {
           text: this.$t('elements.SiteHeader.linkList.take_action'),
           to: '/take-action'
-        },
-        {
-          text: this.$t('elements.SiteHeader.linkList.about'),
-          to: '/about'
         }
       ]
     }
@@ -41,8 +43,6 @@ export default {
 
 <style scoped>
 header {
-  position: absolute;
-  z-index: 9;
   display: flex;
   align-items: center;
   padding: 25px;
