@@ -40,8 +40,6 @@ export default {
 <style scoped>
 #action {
   text-align: justify;
-  max-width: 600px;
-  padding-top: 100px;
 }
 
 @media(min-width: 375px) {
