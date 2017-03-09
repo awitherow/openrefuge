@@ -1,5 +1,5 @@
 <template>
-  <div id="find-help" class="container centered">
+  <div id="find-help" class="container container--centered">
     <div>
       <p v-html="github" />
       <p v-html="takeAction" />
@@ -20,8 +20,8 @@ export default {
 </script>
 
 <style scoped>
-.centered {
-  text-align: center;
+#find-help {
+  max-width: 600px;
 }
 
 button {

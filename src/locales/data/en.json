@@ -29,7 +29,7 @@
     "find-help": {
       "paragraphs": [
         "We are trying really hard to develop this page into an interactive map and events list. If you have any web development knowledge, we would love your help. Check our open source repository at <a href='http://www.github.com/openrefuge'>http://www.github.com/openrefuge</a>.",
-        "If you cannot help with development, please look at the other areas we need help with on the 'Take Action' page. Thank you!."
+        "If you cannot help with development, please look at the other areas we need help with on the <router-link to='take-action'>Take Action</router-link> page. Thank you!"
       ]
     }
   }
