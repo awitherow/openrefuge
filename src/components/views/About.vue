@@ -58,9 +58,9 @@ export default {
 }
 
 .worker img {
-    border-radius: 125px;
-    height: 250px;
-    width: 250px;
+  border-radius: 125px;
+  height: 250px;
+  width: 250px;
 }
 
 .worker h2 {

@@ -18,22 +18,35 @@ export default {
 </script>
 
 <style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  height: 100vh;
+  height: 87vh;
+  padding-top: 100px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container--centered {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .fade-enter-active, .fade-leave-active {
