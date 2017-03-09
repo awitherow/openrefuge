@@ -1,5 +1,5 @@
 <template>
-  <div id="hello" class="container">
+  <div id="hello" class="container container--centered">
     <div class="centered">
 
       <h1>{{ $t("brand.title") }}</h1>

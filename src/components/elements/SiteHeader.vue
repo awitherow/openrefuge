@@ -1,5 +1,4 @@
 <template>
-  <div class="container">
     <header>
       <div class="logo-container">
         <div class="logo">^</div>
@@ -10,7 +9,6 @@
         </li>
       </ul>
     </header>
-  </div>
 </template>
 
 <script>
@@ -43,9 +41,16 @@ export default {
 
 <style scoped>
 header {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9;
   display: flex;
   align-items: center;
-  padding: 25px;
+  max-height: 80px;
+  height: 13vh;
+  padding: 0 15px;
   background: white;
 }
 
