@@ -24,17 +24,17 @@ export default {
       paragraphs: this.$t('views.about.paragraphs'),
       workers: [
         {
-          photo: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=500&h=500',
+          photo: 'http://i.imgur.com/DC4nEAQ.jpg',
           name: 'Austin',
           description: 'Technical lead for development and planning at OpenRefuge, as well as Project Manager for our entire cause.'
         },
         {
-          photo: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=500&h=500',
+          photo: 'http://i.imgur.com/bW8aGkc.jpg',
           name: 'Jeff',
           description: 'Mission leader at OpenRefuge, inviting and inspiring people to help join hands to make the world a better place'
         },
         {
-          photo: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=500&h=500',
+          photo: 'http://i.imgur.com/FxzSDb0.jpg',
           name: 'Adam',
           description: 'Philosopher and writer at OpenRefuge who also helps with business management.'
         }
