@@ -10,15 +10,15 @@
     <div class="workers">
       <div v-for="admin in admins" class="worker">
         <img :src="admin.photo" />
-        <h2>{{ admin.name }}</h2>
-        <p>{{ admin.description }}</p>
+        <h3>{{ admin.name }}</h3>
+        <p v-html="admin.description" />
       </div>
     </div>
     <h2>Team Athens, Greece</h2>
     <div class="workers">
       <div v-for="greekers in greeceTeam" class="worker">
         <img :src="greekers.photo" />
-        <h2>{{ greekers.name }}</h2>
+        <h3>{{ greekers.name }}</h3>
         <p>{{ greekers.description }}</p>
       </div>
     </div>
@@ -26,7 +26,7 @@
     <div class="workers">
       <div v-for="hamburgers in hamburgTeam" class="worker">
         <img :src="hamburgers.photo" />
-        <h2>{{ hamburgers.name }}</h2>
+        <h3>{{ hamburgers.name }}</h3>
         <p>{{ hamburgers.description }}</p>
       </div>
     </div>
@@ -36,7 +36,7 @@
 <script>
 export default {
   name: 'hello',
-  data () {
+  data() {
     return {
       paragraphs: this.$t('views.about.paragraphs'),
       admins: [
@@ -54,6 +54,11 @@ export default {
           photo: 'http://i.imgur.com/cURePXv.jpg',
           name: 'Adam',
           description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
+        },
+        {
+          photo: 'http://i.imgur.com/8okScMb.png',
+          name: 'Social Media Expert',
+          description: 'We are interested in someone who is a social media expert to do part time work weekly to help lead our social campaigns. <a href="mailto:contactopenrefuge@gmail.com?Subject=Social%20Media%20Application%20help." target="_top">Send us an email application</a>!'
         }
       ],
       greeceTeam: [
@@ -90,7 +95,8 @@ export default {
 }
 
 .worker {
-  margin: 25px;
+  margin: 15px;
+  max-width: 325px;
 }
 
 .worker img {
@@ -99,7 +105,7 @@ export default {
   width: 250px;
 }
 
-.worker h2 {
+h2 {
   text-align: center;
 }
 
@@ -122,6 +128,40 @@ export default {
 @media(min-width: 768px) {
   #about {
     padding-top: 0;
+  }
+
+  .workers {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .worker img {
+    border-radius: 87.5px;
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media(min-width: 1024px) {
+  #about {
+    padding-top: 0;
+    max-width: 1000px;
+  }
+
+  .workers {
+    flex-direction: row;
+  }
+
+  .worker {
+    margin: 25px;
+    max-width: 350px;
+  }
+
+  .worker img {
+    border-radius: 125px;
+    height: 250px;
+    width: 250px;
   }
 }
 </style>
