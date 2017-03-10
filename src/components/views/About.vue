@@ -2,7 +2,7 @@
   <div id="about" class="container">
     <h1>Our Mission</h1>
     <div class="mission">
-      <p v-for="paragraph in paragraphs">{{ paragraph }}</p>
+      <p v-for="paragraph in paragraphs" v-html="paragraph" />
     </div>
 
     <h1>Meet the staff</h1>
