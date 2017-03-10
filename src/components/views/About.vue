@@ -46,7 +46,7 @@ export default {
           description: 'Technical lead for development and planning at OpenRefuge, as well as Project Manager for our entire cause.'
         },
         {
-          photo: 'http://i.imgur.com/luKz0jq.jpg',
+          photo: 'http://i.imgur.com/XjqRrJI.jpg',
           name: 'Jeff',
           description: 'Mission leader at OpenRefuge, inviting and inspiring people to help join hands to make the world a better place.'
         },
