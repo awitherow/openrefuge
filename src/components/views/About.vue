@@ -48,12 +48,12 @@ export default {
         {
           photo: 'http://i.imgur.com/luKz0jq.jpg',
           name: 'Jeff',
-          description: 'Mission leader at OpenRefuge, inviting and inspiring people to help join hands to make the world a better place'
+          description: 'Mission leader at OpenRefuge, inviting and inspiring people to help join hands to make the world a better place.'
         },
         {
           photo: 'http://i.imgur.com/cURePXv.jpg',
           name: 'Adam',
-          description: 'Philosopher and writer at OpenRefuge who also helps with business management.'
+          description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
         }
       ],
       greeceTeam: [
@@ -65,14 +65,14 @@ export default {
         {
           photo: 'http://i.imgur.com/leGPG4Q.jpg',
           name: 'Rita',
-          description: 'Helps in social support, case study, and providing clothing, food distribution and shelter for unofficial and homeless refugees.'
+          description: 'Social worker and translator with Bridges, assisting refugees with support building their case as well as connecting them with medical help, clothing, food, and shelter.'
         }
       ],
       hamburgTeam: [
         {
           photo: 'http://i.imgur.com/pNtRO0g.jpg',
           name: 'Maja',
-          description: 'Works directly with refugees in the community of Hamburg, assisting them with cultural integration.'
+          description: 'Works directly with refugees in the community of Hamburg, assisting with cultural integration.'
         }
       ]
     }
