@@ -22,8 +22,8 @@
           <div class="project-content">
             <img :src="project.img" />
             <div class="project-direction">
-              <p v-html="project.description" />
-              <a :href="project.btnLink" class="button-link green">{{ project.btnText }}</a>
+              <p v-for= "p in project.description" v-html="p" />
+              <a target="_blank" :href="project.btnLink" class="button-link green">{{ project.btnText }}</a>
             </div>
           </div>
         </div>
@@ -40,7 +40,9 @@ export default {
       projects: [
         {
           name: 'Save Manni',
-          description: 'A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. <a href="https://www.youcaring.com/mannisyrianrefugee-773510">Read More</a>.',
+          description: [
+            'A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. An estimated $30,000 is needed to conduct this surgery and we are already 1/5th of the way there!',
+            'If we can get $5 bucks from over 5,000 people (0.00000007% of the worlds population)... Manni can be saved! <a target="_blank" href="https://www.youcaring.com/mannisyrianrefugee-773510">Read his story</a>.'],
           img: 'static/manni.jpg',
           btnLink: 'https://www.youcaring.com/mannisyrianrefugee-773510',
           btnText: 'Donate Now'
@@ -52,13 +54,8 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 700px;
-}
-
 .introduction {
   margin: 50px 0 25px 0;
-  max-width: 500px;
 }
 
 .introduction h1 {
@@ -115,7 +112,6 @@ export default {
 
 .project {
   text-align: center;
-  max-width: 300px;
 }
 
 .project img {
@@ -141,14 +137,13 @@ export default {
   .projects {
     justify-content: flex-start;
   }
+
   .project {
     text-align: left;
-    max-width: 500px;
   }
 
   .project-content {
     flex-direction: row;
-    align-items: flex-start;
   }
 
   .project-direction {
