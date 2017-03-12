@@ -41,41 +41,41 @@ export default {
       paragraphs: this.$t('views.about.paragraphs'),
       admins: [
         {
-          photo: 'http://i.imgur.com/T9C2WEJ.jpg',
+          photo: 'static/austin.jpg',
           name: 'Austin',
           description: 'Technical lead for development and planning at OpenRefuge, as well as Project Manager for our entire cause.'
         },
         {
-          photo: 'http://i.imgur.com/XjqRrJI.jpg',
+          photo: 'static/jeff-skittles.jpg',
           name: 'Jeff',
           description: 'Mission leader at OpenRefuge, inviting and inspiring people to help join hands to make the world a better place.'
         },
         {
-          photo: 'http://i.imgur.com/cURePXv.jpg',
+          photo: 'static/adam.jpg',
           name: 'Adam',
           description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
         },
         {
-          photo: 'http://i.imgur.com/8okScMb.png',
+          photo: 'static/placeholder-person.png',
           name: 'Social Media Expert',
           description: 'We are interested in someone who is a social media expert to do part time work weekly to help lead our social campaigns. <a href="mailto:contactopenrefuge@gmail.com?Subject=Social%20Media%20Application%20help." target="_top">Send us an email application</a>!'
         }
       ],
       greeceTeam: [
         {
-          photo: 'http://i.imgur.com/bK2o0mw.jpg',
+          photo: 'static/moha.jpg',
           name: 'Moha',
           description: 'A refugee from Syria pursuing his doctorate in Law, working within the refugee and migrant community in Athens.'
         },
         {
-          photo: 'http://i.imgur.com/leGPG4Q.jpg',
+          photo: 'static/rita.jpg',
           name: 'Rita',
           description: 'Social worker and translator with Bridges, assisting refugees with support building their case as well as connecting them with medical help, clothing, food, and shelter.'
         }
       ],
       hamburgTeam: [
         {
-          photo: 'http://i.imgur.com/pNtRO0g.jpg',
+          photo: 'static/maja.jpg',
           name: 'Maja',
           description: 'Works directly with refugees in the community of Hamburg, assisting with cultural integration.'
         }
@@ -96,13 +96,13 @@ export default {
 
 .worker {
   margin: 15px;
-  max-width: 325px;
+  max-width: 300px;
 }
 
 .worker img {
-  border-radius: 125px;
-  height: 250px;
-  width: 250px;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
 }
 
 h2 {

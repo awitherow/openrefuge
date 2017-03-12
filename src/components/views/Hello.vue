@@ -41,7 +41,7 @@ export default {
         {
           name: 'Save Manni',
           description: 'A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. <a href="https://www.youcaring.com/mannisyrianrefugee-773510">Read More</a>.',
-          img: 'http://i.imgur.com/5ZlqzOA.jpg',
+          img: 'static/manni.jpg',
           btnLink: 'https://www.youcaring.com/mannisyrianrefugee-773510',
           btnText: 'Donate Now'
         }
@@ -119,6 +119,8 @@ export default {
 }
 
 .project img {
+  min-width: 200px;
+  min-height: 200px;
   height: 200px;
   width: 200px;
   border-radius: 100px;
