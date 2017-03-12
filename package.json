@@ -10,6 +10,7 @@
     "lint": "eslint --ext .js,.vue src",
     "docs": "cd docs && gitbook serve",
     "docs:deploy": "bash ./deploy-docs.sh",
+    "deploy": "npm run build && npm run start",
     "start": "node server.js"
   },
   "dependencies": {
