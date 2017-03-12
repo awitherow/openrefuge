@@ -6,14 +6,6 @@
     </div>
 
     <h1>Meet the staff</h1>
-    <h2>Administraton</h2>
-    <div class="workers">
-      <div v-for="admin in admins" class="worker">
-        <img :src="admin.photo" />
-        <h3>{{ admin.name }}</h3>
-        <p v-html="admin.description" />
-      </div>
-    </div>
     <h2>Team Athens, Greece</h2>
     <div class="workers">
       <div v-for="greekers in greeceTeam" class="worker">
@@ -28,6 +20,14 @@
         <img :src="hamburgers.photo" />
         <h3>{{ hamburgers.name }}</h3>
         <p>{{ hamburgers.description }}</p>
+      </div>
+    </div>
+    <h2>Administraton</h2>
+    <div class="workers">
+      <div v-for="admin in admins" class="worker">
+        <img :src="admin.photo" />
+        <h3>{{ admin.name }}</h3>
+        <p v-html="admin.description" />
       </div>
     </div>
   </div>
