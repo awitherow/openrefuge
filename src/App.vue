@@ -5,15 +5,18 @@
     <transition name="fade">
       <router-view></router-view>
     </transition>
+    <site-footer />
   </div>
 </template>
 
 <script>
 import SiteHeader from './components/elements/SiteHeader'
+import SiteFooter from './components/elements/SiteFooter'
 export default {
   name: 'app',
   components: {
-    'site-header': SiteHeader
+    'site-header': SiteHeader,
+    'site-footer': SiteFooter
   }
 }
 </script>
@@ -54,8 +57,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  height: 87vh;
+  height: 74vh;
   padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .container {
