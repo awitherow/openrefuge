@@ -1,7 +1,7 @@
 <template>
     <header>
       <div class="logo-container">
-        <div class="logo">^</div>
+        <img src="static/logo.jpg" class="logo"/>
       </div>
       <ul class="site-links">
         <li v-for="item in linkList">
