@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="background"></div>
     <site-header />
     <transition name="fade">
       <router-view></router-view>
@@ -24,6 +25,28 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.background {
+  background: url(http://i.imgur.com/sSezI4R.jpg) no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.background:after {
+  background-image: linear-gradient(to bottom right,#fff,#fff);
+  content: '';
+  position: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .9;
 }
 
 #app {
