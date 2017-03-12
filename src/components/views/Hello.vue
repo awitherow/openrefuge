@@ -18,7 +18,7 @@
       <h2>Featured Projects</h2>
       <div class="projects">
         <div v-for="project in projects" class="project">
-          <h4>{{ project.name }}</h4>
+          <h3>{{ project.name }}</h3>
           <div class="project-content">
             <img :src="project.img" />
             <div class="project-direction">
@@ -40,7 +40,7 @@ export default {
       projects: [
         {
           name: 'Save Manni',
-          description: 'A young boy, Manni, suffers in a life critical condition. <a href="https://www.youcaring.com/mannisyrianrefugee-773510">Read More</a>.',
+          description: 'A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. <a href="https://www.youcaring.com/mannisyrianrefugee-773510">Read More</a>.',
           img: 'http://i.imgur.com/5ZlqzOA.jpg',
           btnLink: 'https://www.youcaring.com/mannisyrianrefugee-773510',
           btnText: 'Donate Now'
@@ -110,7 +110,7 @@ export default {
 .projects {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .project {
@@ -135,4 +135,23 @@ export default {
   text-align: center;
 }
 
+@media(min-width: 768px) {
+  .projects {
+    justify-content: flex-start;
+  }
+  .project {
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .project-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .project-direction {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
 </style>
