@@ -28,7 +28,7 @@ html {
 }
 
 .background {
-  background: url(http://i.imgur.com/sSezI4R.jpg) no-repeat center center;
+  background: url(http://i.imgur.com/ysuJylK.jpg) no-repeat center center;
   background-size: cover;
   position: fixed;
   top: 0;

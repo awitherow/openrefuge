@@ -1,7 +1,8 @@
 {
   "brand": {
     "title": "OpenRefuge",
-    "subtitle": "Welcoming refugees with open arms"
+    "subtitle": "Welcoming refugees with open arms.",
+    "description": "It is our mission to provide hope and refuge to all those in need, as well as direction for those who want to take action."
   },
   "elements": {
     "SiteHeader": {
