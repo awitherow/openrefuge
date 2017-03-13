@@ -66,11 +66,6 @@ export default {
           photo: 'static/moha.jpg',
           name: 'Moha',
           description: 'A refugee from Syria pursuing his doctorate in Law, working within the refugee and migrant community in Athens.'
-        },
-        {
-          photo: 'static/rita.jpg',
-          name: 'Rita',
-          description: 'Social worker and translator with Bridges, assisting refugees with support building their case as well as connecting them with medical help, clothing, food, and shelter.'
         }
       ],
       hamburgTeam: [
