@@ -25,7 +25,9 @@
             <img :src="project.img" />
             <div class="project-direction">
               <p v-for= "p in project.description" v-html="p" />
-              <a target="_blank" :href="project.btnLink" class="button-link green">{{ project.btnText }}</a>
+              <div class="button-container">
+                <a v-for="button in project.buttons" target="_blank" :href="button.link" :class="button.class">{{ button.text }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -101,6 +103,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .project {
