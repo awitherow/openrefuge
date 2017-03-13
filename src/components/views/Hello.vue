@@ -37,17 +37,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      projects: [
-        {
-          name: 'Save Manni',
-          description: [
-            'A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. An estimated $30,000 is needed to conduct this surgery and we are already 1/5th of the way there!',
-            'If we can get $5 bucks from over 5,000 people (0.00000007% of the worlds population)... Manni can be saved! <a target="_blank" href="https://www.youcaring.com/mannisyrianrefugee-773510">Read his story</a>.'],
-          img: 'static/manni.jpg',
-          btnLink: 'https://www.youcaring.com/mannisyrianrefugee-773510',
-          btnText: 'Donate Now'
-        }
-      ]
+      projects: this.$t('projects')
     }
   }
 }
