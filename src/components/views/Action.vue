@@ -26,7 +26,7 @@
         <li><a target="_blank" href="https://medium.com/openrefuge">Medium</a>, an open blogging platform.</li>
         <li><a target="_blank" href="https://www.patreon.com/openrefuge">Patreon</a>, our donation platform.</li>
         <li><a target="_blank" href="https://twitter.com/openrefuge">Twitter</a></li>
-        <li><a target="_blank" href="https://www.facebook.com/groups/openrefuge/">Facebook</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/OpenRefugeOrg/">Facebook</a></li>
         <li><a target="_blank" href="https://www.instagram.com/openrefuge/">Instagram</a></li>
       </ul>
     </div>
