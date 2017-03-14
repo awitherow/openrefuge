@@ -1,14 +1,18 @@
 <template>
-    <header>
-      <div class="logo-container">
-        <img src="static/logo.jpg" class="logo"/>
+    <div class="header">
+      <div class="container">
+        <router-link exact to="/">
+          <img src="static/logo.png" class="logo" alt="OpenRefuge logo" />
+        </router-link>
+        <nav>
+          <ul class="site-links">
+            <li v-for="item in linkList">
+              <router-link exact :to="item.to">{{ item.text }}</router-link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="site-links">
-        <li v-for="item in linkList">
-          <router-link exact :to="item.to">{{ item.text }}</router-link>
-        </li>
-      </ul>
-    </header>
+    </div>
 </template>
 
 <script>
@@ -40,31 +44,24 @@ export default {
 </script>
 
 <style scoped>
-header {
+.header {
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 9;
-  display: flex;
-  align-items: center;
-  max-height: 80px;
   height: 13vh;
-  padding: 0 15px;
+  max-height: 80px;
   background: white;
 }
 
-.logo-container {
-  min-width: 50px;
-  margin-right: 15px;
-}
-
-.logo {
-  height: 60px;
-  width: 60px;
-  font-size: 60px;
+.container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .site-links {
@@ -76,6 +73,7 @@ header {
 .site-links li {
   display: inline-block;
   padding: 0 8px;
+  font-size: 14px;
 }
 
 .site-links li a {
@@ -83,18 +81,15 @@ header {
   text-decoration: none;
 }
 
+.site-links li a:hover,
 .site-links li a.router-link-active {
   color: #3fb618;
   text-decoration: underline;
 }
 
-@media(max-width: 425px) {
-  header {
-    padding: 15px;
-  }
-
-  .site-links li a {
-    font-size: 14px;
+@media(min-width: 425px) {
+  .site-links li {
+    font-size: 16px;
   }
 }
 </style>
