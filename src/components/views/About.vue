@@ -65,7 +65,7 @@ export default {
         {
           photo: 'static/moha.jpg',
           name: 'Moha',
-          description: 'A refugee from Syria pursuing his doctorate in Law, working within the refugee and migrant community in Athens.'
+          description: 'A refugee from Syria who studied English Literature in Syria, working in Athens at Médecins Sans Frontières (Doctors Without Borders),also volunteer in the refugee squats, as well as in Port Periaus.'
         }
       ],
       hamburgTeam: [
