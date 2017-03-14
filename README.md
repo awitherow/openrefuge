@@ -80,6 +80,12 @@ The aim of this site is to create a portal for refugees to find information they
 
 If you would like to work on this, please shoot me an email: contactopenrefuge@gmail.com
 
+## contributing
+
+We strictly follow the guidelines set in the [contributing docs](https://github.com/openrefuge/openrefuge/blob/master/CONTRIBUTING.md)
+
+## setting up
+
 ``` bash
 # install dependencies
 yarn install
