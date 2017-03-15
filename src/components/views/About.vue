@@ -5,7 +5,7 @@
       <p v-for="paragraph in paragraphs" v-html="paragraph" />
     </div>
 
-    <h1>OpenRefuge Contributors</h1>
+    <h1>Active Contributors</h1>
     <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply <a href="mailto:contactopenrefuge@gmail.com?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
     <div class="people">
       <div v-for="person in people" class="person">
@@ -48,6 +48,11 @@ export default {
           photo: 'static/adam.jpg',
           name: 'Adam',
           description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
+        },
+        {
+          photo: 'static/adrian.jpg',
+          name: 'Adrian',
+          description: 'Adrian is a super talented developer who helps out when he can to make sure the design of the site is nice and pretty, ensures accesibility for handicapped web users and is a <a href="https://www.patreon.com/adrianpayne">wonderful singer</a>!'
         },
         {
           photo: 'static/placeholder-person.png',
