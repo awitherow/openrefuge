@@ -2,7 +2,7 @@
   <div id="find-help" class="container container--centered">
     <div>
       <p v-html="github" />
-      <p v-html="takeAction" />
+      <p v-html="getInvolved" />
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
   data () {
     return {
       github: this.$t('views.find-help.paragraphs')[0],
-      takeAction: this.$t('views.find-help.paragraphs')[1]
+      getInvolved: this.$t('views.find-help.paragraphs')[1]
     }
   }
 }

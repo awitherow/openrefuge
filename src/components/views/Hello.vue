@@ -9,8 +9,8 @@
         <router-link class="button-link green" to="/find-help">
           {{ $t("views.hello.button-find_help") }}
         </router-link>
-        <router-link class="button-link" to="/take-action">
-          {{ $t("views.hello.button-take_action") }}
+        <router-link class="button-link" to="/get-involved">
+          {{ $t("views.hello.button-get_involved") }}
         </router-link>
       </div>
     </div>
