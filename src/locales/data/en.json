@@ -2,14 +2,14 @@
   "brand": {
     "title": "OpenRefuge",
     "subtitle": "Welcoming refugees with open arms.",
-    "description": "It is our mission to provide hope and refuge to all those in need, as well as direction for those brave enough to take action."
+    "description": "It is our mission to provide hope and refuge to all those in need, as well as direction for those brave enough to get involved."
   },
   "elements": {
     "SiteHeader": {
       "linkList": {
         "home": "Home",
         "find_help": "Find Help",
-        "take_action": "Take Action",
+        "get_involved": "Get Involved",
         "about": "About"
       }
     }
@@ -17,7 +17,7 @@
   "views": {
     "hello": {
       "button-find_help": "Find Help",
-      "button-take_action": "Take Action"
+      "button-get_involved": "Get Involved"
     },
     "about": {
       "paragraphs": [
@@ -30,7 +30,7 @@
     "find-help": {
       "paragraphs": [
         "We are trying really hard to develop this page into an interactive map and events list. If you have any web development knowledge, we would love your help. Check our open source repository at <a href='http://www.github.com/openrefuge'>http://www.github.com/openrefuge</a>.",
-        "If you cannot help with development, please look at the other areas we need help with on the 'Take Action' page. Thank you!."
+        "If you cannot help with development, please look at the other areas we need help with on the <router-link to='get-involved'>Get Involved</router-link> page. Thank you!"
       ]
     }
   },
