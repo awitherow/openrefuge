@@ -6,6 +6,7 @@
     </div>
 
     <h1>OpenRefuge Contributors</h1>
+    <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply <a href="mailto:contactopenrefuge@gmail.com?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
     <div class="people">
       <div v-for="person in people" class="person">
         <img :src="person.photo" />
