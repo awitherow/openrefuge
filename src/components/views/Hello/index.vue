@@ -1,5 +1,6 @@
 <template>
   <div id="hello" class="container">
+
     <div class="introduction">
       <h1>{{ $t("brand.title") }}</h1>
       <h2>{{ $t("brand.subtitle") }}</h2>
@@ -14,6 +15,7 @@
         </router-link>
       </div>
     </div>
+
     <div class="project-showcase">
       <h2>Featured Projects</h2>
       <div class="projects">
@@ -29,6 +31,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
