@@ -2,20 +2,22 @@ import Vue from 'vue'
 import App from './App'
 
 import VueI18n from 'vue-i18n'
-import VueAnalytics from 'vue-ua'
 
 import locales from './locales'
 import router from './router'
 
 Vue.use(VueI18n)
 
-Vue.use(VueAnalytics, {
-  appName: 'OpenRefuge', // Mandatory
-  appVersion: '0.1', // Mandatory
-  trackingId: 'UA-56817747-11', // Mandatory
-  vueRouter: router,
-  ignoredViews: ['homepage']
-})
+if (process.env.APP_ENV === 'PROD') {
+  const VueAnalytics = require('vue-ua')
+  Vue.use(VueAnalytics, {
+    appName: 'OpenRefuge', // Mandatory
+    appVersion: '0.1', // Mandatory
+    trackingId: 'UA-56817747-11', // Mandatory
+    vueRouter: router,
+    ignoredViews: ['homepage']
+  })
+}
 
 Vue.config.lang = 'en'
 
