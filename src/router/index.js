@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'hello',
-      component: require('components/views/Hello')
+      component: require('components/views/Hello/')
     },
     {
       path: '/find-help',
