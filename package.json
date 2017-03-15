@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
+    "dev-server": "DATABASE_URL=$(heroku config:get DATABASE_URL -a aethernote) node server.js",
     "build": "node build/build.js",
     "start": "node server.js",
     "deploy": "npm run build && npm run start",
