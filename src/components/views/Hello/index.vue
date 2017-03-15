@@ -1,19 +1,21 @@
 <template>
   <div id="hello" class="container">
+
     <div class="introduction">
       <h1>{{ $t("brand.title") }}</h1>
       <h2>{{ $t("brand.subtitle") }}</h2>
-      <p>{{ $t("brand.description") }}</p>
+      <p v-html="$t('brand.description')" />
 
       <div class="button-container">
         <router-link class="button-link green" to="/find-help">
           {{ $t("views.hello.button-find_help") }}
         </router-link>
-        <router-link class="button-link" to="/take-action">
-          {{ $t("views.hello.button-take_action") }}
+        <router-link class="button-link" to="/get-involved">
+          {{ $t("views.hello.button-get_involved") }}
         </router-link>
       </div>
     </div>
+
     <div class="project-showcase">
       <h2>Featured Projects</h2>
       <div class="projects">
@@ -29,6 +31,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 

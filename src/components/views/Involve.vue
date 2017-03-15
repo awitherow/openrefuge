@@ -1,6 +1,6 @@
 <template>
-  <div id="action" class="container">
-    <div class="action-item">
+  <div id="involvement" class="container">
+    <div class="involvement-item">
       <h2>Learn</h2>
       <p>Below are some great articles that highlight the issues occuring in Syria and the Middle East, the origin of the refugee crisis and how it affects Greece, Europe and the World.</p>
       <ul>
@@ -9,7 +9,7 @@
         <li><a target="_blank" href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34#.hg4v7j3ck">The Syrian People Desparately Want Peace</a>, House of Representatives Tulsi Gabbard reflects on her visit to Syria.</li>
       </ul>
     </div>
-    <div class="action-item">
+    <div class="involvement-item">
       <h2>Join a Mission</h2>
       <p>We are actively visiting Greece to connect with organizations on the ground both to assist them through OpenRefuge and to provide first hand experience to those who come with us.</p>
       <p>If you are interested, check the links below.</p>
@@ -19,7 +19,7 @@
         <li><a target="_blank" href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a></li>
       </ul>
     </div>
-    <div class="action-item">
+    <div class="involvement-item">
       <h2>Keep Up to Date</h2>
       <p>To help spread the word about OpenRefuge, we are taking an active stance to keep you updated through all of the most popular social media outlets, so we can help serve you.</p>
       <ul>
@@ -43,24 +43,24 @@ export default {
 </script>
 
 <style scoped>
-#action {
+#involvement {
   text-align: justify;
 }
 
 @media(min-width: 375px) {
-  #action {
+  #involvement {
     padding-top: 65px;
   }
 }
 
 @media(min-width: 425px) {
-  #action {
+  #involvement {
     padding-top: 40px;
   }
 }
 
 @media(min-width: 768px) {
-  #action {
+  #involvement {
     padding-top: 0;
   }
 }
