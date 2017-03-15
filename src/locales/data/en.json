@@ -2,7 +2,7 @@
   "brand": {
     "title": "OpenRefuge",
     "subtitle": "Welcoming refugees with open arms.",
-    "description": "OpenRefuge is a completely open source initiative to do right in the world. It is our mission to educate the entire world about what is really going on with the Refugee Crisis. We seek to empower professionals already working in the field, and provide refuge for those refugees in need."
+    "description": "OpenRefuge is a <a target='_blank' href='https://opensource.com/open-source-way'>completely open source</a> initiative to do right in the world. It is our mission to educate the entire world about what is really going on with the Refugee Crisis. We seek to empower professionals already working in the field, and provide refuge for those refugees in need."
   },
   "elements": {
     "SiteHeader": {
