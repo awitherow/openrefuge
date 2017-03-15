@@ -2,7 +2,7 @@
   "brand": {
     "title": "OpenRefuge",
     "subtitle": "Welcoming refugees with open arms.",
-    "description": "It is our mission to provide hope and refuge to all those in need, as well as direction for those brave enough to get involved."
+    "description": "OpenRefuge is a completely open source initiative to do right in the world. It is our mission to educate the entire world about what is really going on with the Refugee Crisis. We seek to empower professionals already working in the field, and provide refuge for those refugees in need."
   },
   "elements": {
     "SiteHeader": {
@@ -39,7 +39,7 @@
       "name": "Save Manni",
       "description": [
         "A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. An estimated $30,000 is needed to conduct this surgery and we are already 1/5th of the way there!",
-        "If we can get $5 bucks from over 5,000 people (0.00000007% of the worlds population)... Manni can be saved! <a target='_blank' href='https://www.youcaring.com/mannisyrianrefugee-773510'>Read his story</a>."
+        "Most importantly, <strong>ALL FUNDS</strong> in this project go directly to saving Manni. There are <strong>absolutely no hidden agendas</strong>. We are doing this for the people and by the people, the right way. All money in this fund goes to Mannis surgery and rehabilitation."
       ],
       "img": "static/manni.jpg",
       "btnLink": "https://www.youcaring.com/mannisyrianrefugee-773510",
