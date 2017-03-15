@@ -4,7 +4,7 @@
     <div class="introduction">
       <h1>{{ $t("brand.title") }}</h1>
       <h2>{{ $t("brand.subtitle") }}</h2>
-      <p>{{ $t("brand.description") }}</p>
+      <p v-html="$t('brand.description')" />
 
       <div class="button-container">
         <router-link class="button-link green" to="/find-help">
