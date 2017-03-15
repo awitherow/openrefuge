@@ -52,7 +52,7 @@ export default {
         {
           photo: 'static/adrian.jpg',
           name: 'Adrian',
-          description: 'Adrian is a super talented developer who helps out when he can to make sure the design of the site is nice and pretty, ensures accesibility for handicapped web users and is a <a href="https://www.patreon.com/adrianpayne">wonderful singer</a>!'
+          description: 'Adrian is a super talented developer who helps out when he can to make sure the design of the site is nice and pretty, ensures accessibility for all kinds of web users, and is a <a href="https://www.patreon.com/adrianpayne">wonderful singer</a>!'
         },
         {
           photo: 'static/placeholder-person.png',
