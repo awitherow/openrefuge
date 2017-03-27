@@ -55,6 +55,11 @@ export default {
           description: 'Adrian is a super talented developer who helps out when he can to make sure the design of the site is nice and pretty, ensures accessibility for all kinds of web users, and is a <a href="https://www.patreon.com/adrianpayne">wonderful singer</a>!'
         },
         {
+          photo: 'static/joniel.png',
+          name: 'Joniel',
+          description: 'Joniel is one of the most talented artists I have met, and we are lucky to have him guiding the vision of our brand and providing upcoming visual and user experience support!'
+        },
+        {
           photo: 'static/adam.jpg',
           name: 'Adam',
           description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
