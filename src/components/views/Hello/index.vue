@@ -7,10 +7,10 @@
       <p v-html="$t('brand.description')" />
 
       <div class="button-container">
-        <router-link class="button-link green" to="/find-help">
+        <router-link class="button green" to="/find-help">
           {{ $t("views.hello.button-find_help") }}
         </router-link>
-        <router-link class="button-link" to="/get-involved">
+        <router-link class="button" to="/get-involved">
           {{ $t("views.hello.button-get_involved") }}
         </router-link>
       </div>
@@ -25,7 +25,9 @@
             <img :src="project.img" />
             <div class="project-direction">
               <p v-for= "p in project.description" v-html="p" />
-              <a target="_blank" :href="project.btnLink" class="button-link green">{{ project.btnText }}</a>
+              <div class="button-container">
+                <a v-for="button in project.buttons" target="_blank" :href="button.link" :class="button.class">{{ button.text }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -68,11 +70,11 @@ export default {
   min-height: 64px;
 }
 
-.button-container .button-link {
+.button-container .button {
   margin-right: 10px;
 }
 
-.button-link {
+.button {
   border: 1px solid #444;
   padding: 10px;
   background: none;
@@ -83,7 +85,7 @@ export default {
   font-size: 12px;
 }
 
-.button-link.green {
+.button.green {
   border-color: #0C8300;
   background: #3fb618;
   color: white;
@@ -101,6 +103,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .project {

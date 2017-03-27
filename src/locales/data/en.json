@@ -42,8 +42,33 @@
         "Most importantly, <strong>ALL FUNDS</strong> in this project go directly to Mannis surgery and rehabilitation. There are <strong>absolutely no hidden agendas</strong>. We are doing this for the people and by the people, the right way."
       ],
       "img": "static/manni.jpg",
-      "btnLink": "https://www.youcaring.com/mannisyrianrefugee-773510",
-      "btnText": "Read His Story"
+      "buttons": [
+        {
+          "link": "https://www.youcaring.com/mannisyrianrefugee-773510",
+          "text": "Donate Now",
+          "class": "button green"
+        }
+      ]
+    },
+    {
+      "name": "Athens Refuge Hotel",
+      "description": [
+        "Greatly inspired by the story of the <a target='_blank' href='https://www.irinnews.org/feature/2016/05/06/welcome-city-plaza-greece’s-refugee-hotel'>City Plaza Hotel</a>, we want to provide even more opportunity for open housing for refugees in need. In Athens, rent for a hotel is extremely cheap per month.",
+        "It is our goal to buy one of these hotels and turn it into an open refuge that provides quality shelter, food, water and meaning for refugees in Athens, Greece."
+      ],
+      "img": "static/athens-hotel-sketch.jpg",
+      "buttons": [
+        {
+          "link": "https://goo.gl/4xOL4t",
+          "text": "See The Plan",
+          "class": "button green"
+        },
+        {
+          "link": "https://goo.gl/forms/gnr2yPCctgo9aG1L2",
+          "text": "Provide Your Skills",
+          "class": "button"
+        }
+      ]
     }
   ]
 }
