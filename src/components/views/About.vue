@@ -45,9 +45,9 @@ export default {
           description: 'Technical lead for development and planning at OpenRefuge, as well as Project Manager for our entire cause.'
         },
         {
-          photo: 'static/adam.jpg',
-          name: 'Adam',
-          description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
+          photo: 'static/kim.jpg',
+          name: 'Kim',
+          description: 'Kim helps greatly with investigative journaling and keeping you up to date with what OpenRefuge is working on, as well as what is going on in the world via our social media platforms.'
         },
         {
           photo: 'static/adrian.jpg',
@@ -55,9 +55,9 @@ export default {
           description: 'Adrian is a super talented developer who helps out when he can to make sure the design of the site is nice and pretty, ensures accessibility for all kinds of web users, and is a <a href="https://www.patreon.com/adrianpayne">wonderful singer</a>!'
         },
         {
-          photo: 'static/placeholder-person.png',
-          name: 'Social Media Expert',
-          description: 'We are interested in someone who is a social media expert to do part time work weekly to help lead our social campaigns. <a href="mailto:contactopenrefuge@gmail.com?Subject=Social%20Media%20Application%20help." target="_top">Send us an email application</a>!'
+          photo: 'static/adam.jpg',
+          name: 'Adam',
+          description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
         }
       ]
     }
