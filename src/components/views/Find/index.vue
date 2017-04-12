@@ -2,7 +2,6 @@
   <div id="find-help" class="container--full">
     <div>
       <gmap-map :options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="{lat: 37.99, lng: 23.72 }" :zoom="12" />
-    </div>
   </div>
 </template>
 
@@ -20,6 +19,20 @@ export default {
 <style scoped>
 #find-help {
   position: relative;
+}
+
+.WIP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 button {
