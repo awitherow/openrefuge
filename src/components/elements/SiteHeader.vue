@@ -1,24 +1,28 @@
 <template>
-    <div class="header">
-      <div class="container">
-        <router-link exact to="/">
-          <img src="static/logo.png" class="logo" alt="OpenRefuge logo" />
-        </router-link>
-        <nav>
-          <ul class="site-links">
-            <li v-for="item in linkList">
-              <router-link exact :to="item.to">{{ item.text }}</router-link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div class="header">
+    <div class="container">
+      <router-link exact
+                   to="/">
+        <img src="static/logo.png"
+             class="logo"
+             alt="OpenRefuge logo" />
+      </router-link>
+      <nav>
+        <ul class="site-links">
+          <li v-for="item in linkList">
+            <router-link exact
+                         :to="item.to">{{ item.text }}</router-link>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'SiteHeader',
-  data () {
+  data() {
     return {
       linkList: [
         {
@@ -45,7 +49,7 @@ export default {
 
 <style scoped>
 .header {
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -59,6 +63,7 @@ export default {
   display: flex;
   align-items: center;
 }
+
 .logo {
   height: 30px;
   margin-right: 10px;

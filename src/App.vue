@@ -23,7 +23,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -39,7 +41,7 @@ html {
 }
 
 .background:after {
-  background-image: linear-gradient(to bottom right,#fff,#fff);
+  background-image: linear-gradient(to bottom right, #fff, #fff);
   content: '';
   position: inherit;
   top: 0;
@@ -78,7 +80,8 @@ html {
   justify-content: center;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity .25s;
 }
 
@@ -86,7 +89,8 @@ html {
   transition-delay: .25s;
 }
 
-.fade-enter, .fade-leave-active {
+.fade-enter,
+.fade-leave-active {
   opacity: 0
 }
 </style>
