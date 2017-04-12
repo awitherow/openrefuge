@@ -54,14 +54,20 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  height: 87vh;
-  padding-top: 100px;
+  height: 100vh;
+  padding-top: 80px;
 }
 
 .container {
   height: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--full {
+  height: 100%;
+  width: 100%;
   padding: 0 15px;
 }
 
