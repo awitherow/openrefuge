@@ -2,9 +2,9 @@
   <div id="find-help"
        class="container--full">
 
-    <div class="WIP">
-      <p>Currently a work in progress, stay tuned! Check out <a target="_blank"
-           href="https://github.com/openrefuge/openrefuge">our github</a> if you wanna help with development ;)</p>
+    <div class="action-container">
+      <button @click="getLocation">LOCATE</button>
+      <button @click="provideSuggestion">SUGGEST</button>
     </div>
 
     <gmap-map :options="{styles: styles}"
@@ -22,6 +22,14 @@ export default {
   data() {
     return {
       styles: require('./styles.json')
+    }
+  },
+  methods: {
+    getLocation() {
+      console.log('get location')
+    },
+    provideSuggestion() {
+      console.log('provide suggestion')
     }
   }
 }
@@ -46,12 +54,23 @@ export default {
   text-align: center;
 }
 
+.action-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 5px;
+}
+
 button {
   border: 1px solid black;
   padding: 10px;
-  background: none;
+  background: rgba(255, 255, 255, 0.60);
   text-transform: uppercase;
-  min-width: 100px;
   margin: 5px;
+}
+
+button:hover {
+  background: #FFF;
 }
 </style>
