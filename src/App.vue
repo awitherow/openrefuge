@@ -23,7 +23,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -39,7 +41,7 @@ html {
 }
 
 .background:after {
-  background-image: linear-gradient(to bottom right,#fff,#fff);
+  background-image: linear-gradient(to bottom right, #fff, #fff);
   content: '';
   position: inherit;
   top: 0;
@@ -54,14 +56,20 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  height: 87vh;
-  padding-top: 100px;
+  height: 100vh;
+  padding-top: 80px;
 }
 
 .container {
   height: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--full {
+  height: 100%;
+  width: 100%;
   padding: 0 15px;
 }
 
@@ -72,7 +80,8 @@ html {
   justify-content: center;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity .25s;
 }
 
@@ -80,7 +89,8 @@ html {
   transition-delay: .25s;
 }
 
-.fade-enter, .fade-leave-active {
+.fade-enter,
+.fade-leave-active {
   opacity: 0
 }
 </style>
