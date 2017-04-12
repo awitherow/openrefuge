@@ -9,6 +9,8 @@ import keys from './config/keys.json'
 Vue.use(VueGoogleMaps, {
   installComponents: true,
   load: {
+    // key will be gotten from config json keys file, which you can copy from the example.
+    // on production, it will get the environment variable set on heroku!
     key: keys.GOOGLE_MAPS_TOKEN || process.env.GOOGLE_MAPS_TOKEN
   }
 })
