@@ -1,9 +1,7 @@
 <template>
   <div id="find-help" class="container--full">
     <div>
-      <gmap-map :options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="{lat: 1.38, lng: 103.8}" :zoom="12">
-
-      </gmap-map>
+      <gmap-map :options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="{lat: 37.99, lng: 23.72 }" :zoom="12" />
     </div>
   </div>
 </template>
