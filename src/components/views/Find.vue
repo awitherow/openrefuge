@@ -1,8 +1,13 @@
 <template>
-  <div id="find-help" class="container container--centered">
+  <div id="find-help"
+       class="container--full">
     <div>
-      <p v-html="github" />
-      <p v-html="getInvolved" />
+      <gmap-map :options="{styles: styles}"
+                style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;"
+                :center="{lat: 1.38, lng: 103.8}"
+                :zoom="12">
+
+      </gmap-map>
     </div>
   </div>
 </template>
@@ -10,10 +15,9 @@
 <script>
 export default {
   name: 'find-help',
-  data () {
+  data() {
     return {
-      github: this.$t('views.find-help.paragraphs')[0],
-      getInvolved: this.$t('views.find-help.paragraphs')[1]
+      styles: require('./styles.json')
     }
   }
 }
@@ -21,7 +25,7 @@ export default {
 
 <style scoped>
 #find-help {
-  max-width: 600px;
+  position: relative;
 }
 
 button {
