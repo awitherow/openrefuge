@@ -14,7 +14,7 @@ export default new Router({
     {
       path: '/find-help',
       name: 'find-help',
-      component: require('components/views/Find')
+      component: require('components/views/Find/')
     },
     {
       path: '/get-involved',
