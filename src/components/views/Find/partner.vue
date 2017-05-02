@@ -13,7 +13,7 @@
         <p>{{partner.description}}</p>
       </div>
       <div class="button-container">
-        <a class="button" :href="getMailTo(partner.email)">Contact</a>
+        <a class="button green" :href="getMailTo(partner.email)">Contact</a>
         <a class="button" :href="partner.site">Website</a>
       </div>
     </div>
@@ -52,13 +52,23 @@ export default {
 <style scoped>
 .partner-overlay {
   position: absolute;
-  top: 24px;
-  bottom: 24px;
-  right: 24px;
-  left: 24px;
+  top: 12px;
+  bottom: 12px;
+  right: 12px;
+  left: 12px;
   background: rgba(255, 255, 255, 0.95);
   z-index: 12;
   overflow-y: scroll;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .partner-overlay {
+    right: 20%;
+    left: 20%;
+    bottom: 10%;
+  }
 }
 
 .partner-overlay .close {
@@ -79,6 +89,7 @@ export default {
 }
 
 .partner-overlay .headline {
+  background: #3fb618;
   height: 200px;
   color: white;
   flex-direction: column;
@@ -88,7 +99,6 @@ export default {
 .partner-overlay .headline,
 .partner-overlay .button-container {
   display: flex;
-  background: #3fb618;
 }
 
 .partner-overlay li {
@@ -138,16 +148,24 @@ export default {
 .partner-overlay .button-container {
   justify-content: space-around;
   align-items: center;
-  min-height: 80px;
+  padding-bottom: 12px;
 }
 
-.partner-overlay .button {
+.button {
+  border: 1px solid #444;
+  padding: 10px;
+  background: none;
   text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  padding: 6px 8px;
   min-width: 100px;
+  text-decoration: none;
+  color: #444;
+  font-size: 12px;
   text-align: center;
-  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.button.green {
+  border-color: #0C8300;
+  background: #3fb618;
+  color: white;
 }
 </style>
