@@ -1,17 +1,8 @@
 <template>
-  <div id="find-help"
-       class="container--full">
-
-    <div class="WIP">
-      <p>Currently a work in progress, stay tuned! Check out <a target="_blank"
-           href="https://github.com/openrefuge/openrefuge">our github</a> if you wanna help with development ;)</p>
-    </div>
-
-    <gmap-map :options="{styles: styles}"
-              style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;"
-              :center="{lat: 37.99, lng: 23.72 }"
-              :zoom="12">
-
+  <div id="find-help" class="container--full">
+    <partner-overlay :partnerId="partnerId" :visible="overlayVisible" :toggle="togglePartner" />
+    <gmap-map :options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="markers[0].position" :zoom="12">
+      <gmap-marker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" @click="togglePartner(m.id)"></gmap-marker>
     </gmap-map>
   </div>
 </template>
@@ -19,9 +10,26 @@
 <script>
 export default {
   name: 'find-help',
-  data() {
+  components: {
+    'partner-overlay': require('./partner')
+  },
+  data: function () {
     return {
-      styles: require('./styles.json')
+      styles: require('./styles.json'),
+      center: { lat: 10.0, lng: 10.0 },
+      markers: [{
+        id: 'DE01',
+        position: { lat: 53.5479505, lng: 9.9347988 }
+      }],
+      partnerId: undefined,
+      overlayVisible: false
+    }
+  },
+  methods: {
+    togglePartner(id) {
+      this.partnerId = id
+      this.overlayVisible = !this.overlayVisible
+      console.log(this.partnerId, this.overlayVisible)
     }
   }
 }
