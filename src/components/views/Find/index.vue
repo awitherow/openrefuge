@@ -1,5 +1,6 @@
 <template>
-  <div id="find-help" class="container--full">:options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="markers[0].position" :zoom="12">
+  <div id="find-help" class="container--full">
+    <gmap-map :options="{styles: styles}" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" :center="markers[0].position" :zoom="12">
       <gmap-marker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" @click="showPlaceModal(m.id)"></gmap-marker>
     </gmap-map>
   </div>
