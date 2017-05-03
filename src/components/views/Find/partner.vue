@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="partner-overlay" v-if="visible">
+    <div :class="['partner-overlay', partner.colorClass]" v-if="visible">
       <button class="close" @click="toggle(undefined)">X</button>
       <div class="headline">
         <h1>{{ partner.name }}</h1>
@@ -13,7 +13,7 @@
         <p>{{partner.description}}</p>
       </div>
       <div class="button-container">
-        <a class="button green" :href="getMailTo(partner.email)">Contact</a>
+        <a class="button main" :href="getMailTo(partner.email)">Contact</a>
         <a class="button" :href="partner.site">Website</a>
       </div>
     </div>
@@ -32,7 +32,8 @@ export default {
         description: 'Im Mai 2015 startete das Diakonische Hilfswerk das Projekt Flüchtlingslotsen. Das Projekt unterstützt durch geschulte ehrenamtlich Tätige nach Hamburg geflüchtete und migrierte Menschen. Die Lotsen begleiten Hilfesuchende zu Ämtern- und Behörden und anderen Einrichtungen. Auch längerfristige Unterstützung in Form von Patenschaften für Geflüchtete wird vermittelt. Zur Unterstützung der ehrenamtlichen Arbeit von Lotsinnen und Lotsen bietet das Projekt monatlich entweder Fortbildungen zu relevanten Themen oder es finden Treffen zum Austausch mit kollegialer Fallberatung statt.',
         tags: ['volunteer'],
         contact: 'Fluechtlingslotsen@diakonie-hamburg.de',
-        site: 'diakonie-hamburg.de',
+        site: 'http://www.diakonie-hamburg.de',
+        colorClass: "purple"
       }]
     }
   },
@@ -96,6 +97,15 @@ export default {
   justify-content: flex-end;
 }
 
+.partner-overlay.purple .headline,
+.partner-overlay.purple .button.main {
+  background: purple;
+}
+
+.partner-overlay.purple .button.main {
+  border-color: purple;
+}
+
 .partner-overlay .headline,
 .partner-overlay .button-container {
   display: flex;
@@ -148,7 +158,7 @@ export default {
 .partner-overlay .button-container {
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
 }
 
 .button {
@@ -163,7 +173,7 @@ export default {
   text-align: center;
 }
 
-.button.green {
+.button.main {
   border-color: #0C8300;
   background: #3fb618;
   color: white;
