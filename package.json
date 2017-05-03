@@ -9,6 +9,7 @@
     "build": "node build/build.js",
     "start": "node server.js",
     "deploy": "npm run build && npm run start",
+    "surge": "npm run build && cd ./dist && surge ./",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
@@ -50,6 +51,7 @@
     "ora": "^1.1.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "surge": "^0.19.0",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^2.0.0",
