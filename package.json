@@ -11,7 +11,8 @@
     "docs": "cd docs && gitbook serve",
     "docs:deploy": "bash ./deploy-docs.sh",
     "deploy": "npm run build && npm run start",
-    "start": "node server.js"
+    "start": "node server.js",
+    "surge": "npm run build && cd ./dist && surge ./"
   },
   "dependencies": {
     "compression": "^1.6.2",
@@ -52,6 +53,7 @@
     "ora": "^1.1.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "surge": "^0.19.0",
     "url-loader": "^0.5.7",
     "vue-cli": "^2.8.1",
     "vue-loader": "^10.3.0",
