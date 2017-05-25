@@ -1,53 +1,31 @@
 <template>
-  <div id="involvement"
-       class="container">
-    <div class="involvement-item">
-      <h2>Learn</h2>
-      <p>Below are some great articles that highlight the issues occuring in Syria and the Middle East, the origin of the refugee crisis and how it affects Greece, Europe and the World.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://savagedconscience.wordpress.com/">Savaged Conscience</a>, reflections on the Refugee Crisis and its impact on a savaged conscience.</li>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge/hope-for-the-children-of-war-e8a487308248">Hope for the Children of War</a>, another account of the side effects of greed for oil.</li>
-        <li><a target="_blank"
-             href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34#.hg4v7j3ck">The Syrian People Desparately Want Peace</a>, House of Representatives Tulsi Gabbard reflects on her visit to Syria.</li>
-      </ul>
+  <div id="involvement">
+    <!-- HEADLINE -->
+    <div class="jumbotron section section__vertical">
+      <img src="http://placekitten.com/g/500/500" />
+      <div class="article">
+        <h2>A gripping article title</h2>
+        <h3>And its equally gripping subtitle</h3>
+        <h4>A lot of emotionally powerful content that makes the user have no choice but to click on the button below.</h4>
+        <div class="button-container">
+          <a class="button green">Click me!</a>
+        </div>
+        <hr class="dashed" />
+        <h3>Other articles</h3>
+        <ul>
+          <li>a click bait link</li>
+          <li>a click bait link</li>
+          <li>a click bait link</li>
+        </ul>
+      </div>
     </div>
-    <div class="involvement-item">
-      <h2>Join a Mission</h2>
-      <p>We are actively visiting Greece to connect with organizations on the ground both to assist them through OpenRefuge and to provide first hand experience to those who come with us.</p>
-      <p>If you are interested, check the links below.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/hey-friends-3de36842c17c#.itgp4yjfv">Hey Friends!</a></li>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: May 11-19, 2017.</li>
-        <li><a target="_blank"
-             href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a></li>
-      </ul>
-    </div>
-    <div class="involvement-item">
-      <h2>Keep Up to Date</h2>
-      <p>To help spread the word about OpenRefuge, we are taking an active stance to keep you updated through all of the most popular social media outlets, so we can help serve you.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge">Medium</a>, an open blogging platform.</li>
-        <li><a target="_blank"
-             href="https://www.patreon.com/openrefuge">Patreon</a>, our donation platform.</li>
-        <li><a target="_blank"
-             href="https://twitter.com/openrefuge">Twitter</a></li>
-        <li><a target="_blank"
-             href="https://www.facebook.com/OpenRefugeOrg/">Facebook</a></li>
-        <li><a target="_blank"
-             href="https://www.instagram.com/openrefuge/">Instagram</a></li>
-      </ul>
-    </div>
+    <!-- /HEADLINE -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'involve',
   data() {
     return {}
   }
@@ -75,5 +53,78 @@ export default {
   #involvement {
     padding-top: 0;
   }
+}
+
+.jumbotron {
+  min-height: 100vh;
+}
+
+.section {
+  display: flex;
+}
+
+.section__horizontal {
+  flex-direction: row;
+}
+
+.section__vertical {
+  flex-direction: column;
+}
+
+img {
+  max-width: 100vw;
+}
+
+.article {
+  padding: 0 16px;
+}
+
+.article h2,
+.article h3 {
+  margin-bottom: 4px;
+}
+
+.article h3,
+.article h4 {
+  margin-top: 4px;
+}
+
+.article h4 {
+  color: darkgreen;
+}
+
+.button-container {
+  min-height: 38px;
+}
+
+.button {
+  border: 1px solid #444;
+  padding: 10px;
+  background: none;
+  text-transform: uppercase;
+  min-width: 100px;
+  text-decoration: none;
+  color: #444;
+  font-size: 12px;
+}
+
+.button.green {
+  border-color: #0C8300;
+  background: #3fb618;
+  color: white;
+}
+
+ul {
+  margin: 4px 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 700px;
+  float: center;
+}
+
+hr.dashed {
+  border-top: 1px dashed #8c8b8b;
 }
 </style>
