@@ -1,53 +1,41 @@
 <template>
-  <div id="involvement"
-       class="container">
-    <div class="involvement-item">
-      <h2>Learn</h2>
-      <p>Below are some great articles that highlight the issues occuring in Syria and the Middle East, the origin of the refugee crisis and how it affects Greece, Europe and the World.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://savagedconscience.wordpress.com/">Savaged Conscience</a>, reflections on the Refugee Crisis and its impact on a savaged conscience.</li>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge/hope-for-the-children-of-war-e8a487308248">Hope for the Children of War</a>, another account of the side effects of greed for oil.</li>
-        <li><a target="_blank"
-             href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34#.hg4v7j3ck">The Syrian People Desparately Want Peace</a>, House of Representatives Tulsi Gabbard reflects on her visit to Syria.</li>
-      </ul>
+  <div id="involvement">
+    <!-- HEADLINE -->
+    <div class="section section__vertical">
+      <header>
+        <h1>Peek Beyond The Veil</h1>
+        <hr class="dashed small" />
+        <h2>Experiences on the effects of the refugee crisis</h2>
+      </header>
+      <div class="content">
+        <img src="static/involve/savage.jpg" />
+        <div class="article">
+          <h3>Savaged Conscience</h3>
+          <h4>An outsider looks in on the refugee crisis, and into his own soul...</h4>
+          <h5>At once raw and refined are our creations. We can polish ourselves, our cities and our cultures, but deep down we are still only human. Savage forces of nature. We possess the capacity, above all other living things, to chisel beauty out of life. Likewise, we are gods of destruction and malice... </h5>
+          <div class="button-container">
+            <a href="https://savagedconscience.wordpress.com/2017/02/19/syrian-refuge-crisis-part-1/" class="button green">Read the four part series</a>
+          </div>
+          <hr class="dashed" />
+          <h3>Other articles</h3>
+          <ul>
+            <li>
+              <a href="https://medium.com/openrefuge/hope-for-the-children-of-war-e8a487308248">Hope for the Children of War</a>
+            </li>
+            <li>
+              <a href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34">The Syrian People Desperately Want Peace</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="involvement-item">
-      <h2>Join a Mission</h2>
-      <p>We are actively visiting Greece to connect with organizations on the ground both to assist them through OpenRefuge and to provide first hand experience to those who come with us.</p>
-      <p>If you are interested, check the links below.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/hey-friends-3de36842c17c#.itgp4yjfv">Hey Friends!</a></li>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: May 11-19, 2017.</li>
-        <li><a target="_blank"
-             href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a></li>
-      </ul>
-    </div>
-    <div class="involvement-item">
-      <h2>Keep Up to Date</h2>
-      <p>To help spread the word about OpenRefuge, we are taking an active stance to keep you updated through all of the most popular social media outlets, so we can help serve you.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge">Medium</a>, an open blogging platform.</li>
-        <li><a target="_blank"
-             href="https://www.patreon.com/openrefuge">Patreon</a>, our donation platform.</li>
-        <li><a target="_blank"
-             href="https://twitter.com/openrefuge">Twitter</a></li>
-        <li><a target="_blank"
-             href="https://www.facebook.com/OpenRefugeOrg/">Facebook</a></li>
-        <li><a target="_blank"
-             href="https://www.instagram.com/openrefuge/">Instagram</a></li>
-      </ul>
-    </div>
+    <!-- /HEADLINE -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'involve',
   data() {
     return {}
   }
@@ -56,24 +44,146 @@ export default {
 
 <style scoped>
 #involvement {
-  text-align: justify;
+  margin: 0 auto;
+  padding-bottom: 36px;
 }
 
-@media(min-width: 375px) {
-  #involvement {
-    padding-top: 65px;
+.section {
+  display: flex;
+  padding-top: 24px;
+}
+
+.section__horizontal {
+  flex-direction: row;
+}
+
+.section__vertical {
+  flex-direction: column;
+}
+
+.section h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section h2 {
+  margin: 0 0 8px 0;
+}
+
+.article,
+.section header {
+  padding: 0 16px;
+}
+
+.section header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section header,
+.section img {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.article h3,
+.article h4 {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.article h4,
+.article h5 {
+  margin-top: 4px;
+}
+
+.article h4 {
+  color: darkgreen;
+}
+
+.button-container {
+  min-height: 38px;
+  margin-bottom: 16px;
+}
+
+.button {
+  border: 1px solid #444;
+  padding: 10px;
+  background: none;
+  text-transform: uppercase;
+  min-width: 100px;
+  text-decoration: none;
+  color: #444;
+  font-size: 12px;
+}
+
+.button.green {
+  border-color: #0C8300;
+  background: #3fb618;
+  color: white;
+}
+
+ul {
+  margin: 8px 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 700px;
+  float: center;
+}
+
+ul {
+  margin-bottom: 8px;
+}
+
+hr.dashed {
+  border-top: 1px dashed #8c8b8b;
+}
+
+hr.small {
+  max-width: 40px;
+}
+
+@media(min-width: 720px) {
+  .section {
+    padding: 32px;
+    border: 1px solid rgba(192, 192, 192, 0.10);
+  }
+
+  .article,
+  .section header {
+    padding: 0;
+    text-align: left;
   }
 }
 
-@media(min-width: 425px) {
+@media(min-width: 1024px) {
   #involvement {
-    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 36px;
   }
-}
 
-@media(min-width: 768px) {
-  #involvement {
-    padding-top: 0;
+  .section {
+    font-size: 130%;
   }
+
+  .article,
+  .section header {
+    padding: 0;
+  }
+
+  .section img {
+    margin-bottom: 0;
+    max-width: 500px;
+    padding-right: 36px;
+    float: left;
+  }
+
+  .content {
+    margin-top: 16px;
+  }
+
+  .article {}
 }
 </style>
