@@ -1,21 +1,30 @@
 <template>
   <div id="involvement">
     <!-- HEADLINE -->
-    <div class="jumbotron section section__vertical">
-      <img src="http://placekitten.com/g/500/500" />
+    <div class="section section__vertical">
+      <header>
+        <h1>Outside, Looking In</h1>
+        <h2>Experiences on the effects of the refugee crisis</h2>
+
+        <hr class="dashed" />
+      </header>
+      <img src="static/involve/savage.jpg" />
       <div class="article">
-        <h2>A gripping article title</h2>
-        <h3>And its equally gripping subtitle</h3>
-        <h4>A lot of emotionally powerful content that makes the user have no choice but to click on the button below.</h4>
+        <h3>Savaged Conscience</h3>
+        <h4>An outsider looks in on the refugee crisis, and into his own soul...</h4>
+        <h5>At once raw and refined are our creations. We can polish ourselves, our cities and our cultures, but deep down we are still only human. Savage forces of nature. We possess the capacity, above all other living things, to chisel beauty out of life. Likewise, we are gods of destruction and malice... </h5>
         <div class="button-container">
-          <a class="button green">Click me!</a>
+          <a href="https://savagedconscience.wordpress.com/2017/02/19/syrian-refuge-crisis-part-1/" class="button green">Read the four part series</a>
         </div>
         <hr class="dashed" />
         <h3>Other articles</h3>
         <ul>
-          <li>a click bait link</li>
-          <li>a click bait link</li>
-          <li>a click bait link</li>
+          <li>
+            <a href="https://medium.com/openrefuge/hope-for-the-children-of-war-e8a487308248">Hope for the Children of War</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34">The Syrian People Desperately Want Peace</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -55,10 +64,6 @@ export default {
   }
 }
 
-.jumbotron {
-  min-height: 100vh;
-}
-
 .section {
   display: flex;
 }
@@ -71,21 +76,32 @@ export default {
   flex-direction: column;
 }
 
-img {
+.section h1 {
+  font-size: 24px;
+  margin: 24px 0 0 0;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.section img {
   max-width: 100vw;
 }
 
-.article {
+.article,
+.section header {
   padding: 0 16px;
-}
-
-.article h2,
-.article h3 {
-  margin-bottom: 4px;
 }
 
 .article h3,
 .article h4 {
+  margin-bottom: 4px;
+}
+
+.article h4,
+.article h5 {
   margin-top: 4px;
 }
 
