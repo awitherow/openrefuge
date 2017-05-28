@@ -1,17 +1,13 @@
 <template>
   <div class="header">
     <div class="container">
-      <router-link exact
-                   to="/">
-        <img src="static/logo.png"
-             class="logo"
-             alt="OpenRefuge logo" />
+      <router-link exact to="/">
+        <img src="static/logo.png" class="logo" alt="OpenRefuge logo" />
       </router-link>
       <nav>
         <ul class="site-links">
           <li v-for="item in linkList">
-            <router-link exact
-                         :to="item.to">{{ item.text }}</router-link>
+            <router-link exact :to="item.to">{{ item.text }}</router-link>
           </li>
         </ul>
       </nav>
@@ -89,12 +85,18 @@ export default {
 .site-links li a:hover,
 .site-links li a.router-link-active {
   color: #3fb618;
-  text-decoration: underline;
+  border-bottom: 1px solid #3fb618;
 }
 
 @media(min-width: 425px) {
   .site-links li {
-    font-size: 16px;
+    font-size: 100%;
+  }
+}
+
+@media(min-width: 1024px) {
+  .site-links li {
+    font-size: 140%;
   }
 }
 </style>

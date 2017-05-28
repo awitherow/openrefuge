@@ -1,6 +1,5 @@
 <template>
-  <div id="hello"
-       class="container">
+  <div id="hello" class="container">
 
     <div class="introduction">
       <h1>{{ $t("brand.title") }}</h1>
@@ -8,33 +7,26 @@
       <p v-html="$t('brand.description')" />
 
       <div class="button-container">
-        <router-link class="button green"
-                     to="/find-help">
+        <router-link class="button green" to="/find-help">
           {{ $t("views.hello.button-find_help") }}
         </router-link>
-        <router-link class="button"
-                     to="/get-involved">
+        <router-link class="button" to="/get-involved">
           {{ $t("views.hello.button-get_involved") }}
         </router-link>
       </div>
     </div>
 
     <div class="project-showcase">
-      <h2>Featured Projects</h2>
+      <h2>We Actively Need Your Help!</h2>
       <div class="projects">
-        <div v-for="project in projects"
-             class="project">
+        <div v-for="project in projects" class="project">
           <h3>{{ project.name }}</h3>
           <div class="project-content">
             <img :src="project.img" />
             <div class="project-direction">
-              <p v-for="p in project.description"
-                 v-html="p" />
+              <p v-for="p in project.description" v-html="p" />
               <div class="button-container">
-                <a v-for="button in project.buttons"
-                   target="_blank"
-                   :href="button.link"
-                   :class="button.class">{{ button.text }}</a>
+                <a v-for="button in project.buttons" target="_blank" :href="button.link" :class="button.class">{{ button.text }}</a>
               </div>
             </div>
           </div>
@@ -75,7 +67,7 @@ export default {
 }
 
 .button-container {
-  min-height: 64px;
+  margin-top: 36px;
 }
 
 .button-container .button {
@@ -90,7 +82,6 @@ export default {
   min-width: 100px;
   text-decoration: none;
   color: #444;
-  font-size: 12px;
 }
 
 .button.green {
@@ -99,12 +90,9 @@ export default {
   color: white;
 }
 
-.project-showcase {
-  margin-bottom: 50px;
-}
-
 .project-showcase h2 {
-  margin-bottom: 10px;
+  margin-top: 36px;
+  margin-bottom: 0px;
 }
 
 .projects {
@@ -114,8 +102,12 @@ export default {
   flex-direction: column;
 }
 
-.project {
+.project-showcase {
   text-align: center;
+}
+
+.project {
+  margin-bottom: 24px;
 }
 
 .project img {
@@ -142,8 +134,13 @@ export default {
     justify-content: flex-start;
   }
 
-  .project {
+  .project-showcase {
     text-align: left;
+    margin-top: 64px;
+  }
+
+  .project {
+    margin-bottom: 56px;
   }
 
   .project-content {
@@ -153,6 +150,16 @@ export default {
   .project-direction {
     text-align: left;
     margin-left: 15px;
+  }
+
+  .button {
+    font-size: 100%;
+  }
+}
+
+@media(min-width: 1024px) {
+  #hello {
+    font-size: 130%;
   }
 }
 </style>

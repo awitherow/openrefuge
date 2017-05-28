@@ -21,6 +21,7 @@ export default {
 <style>
 html {
   box-sizing: border-box;
+  font-size: 120%;
 }
 
 *,
@@ -48,7 +49,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .9;
+  opacity: .95;
 }
 
 #app {
@@ -62,7 +63,6 @@ html {
 
 .container {
   height: 100%;
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -92,5 +92,11 @@ html {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+@media(min-width: 768px) {
+  .container {
+    padding: 0 36px;
+  }
 }
 </style>
