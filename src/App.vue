@@ -4,7 +4,7 @@
     <site-header />
     <div class="alert">
       June 20th: World Refugee Day Fundraiser in Arlington, Virginia.
-      <a class="button white" href="">MORE INFO
+      <a class="button white" target="_blank" href="https://www.eventbrite.com/e/try-syrian-cuisine-and-support-refugees-on-world-refugee-day-tickets-35140473101">MORE INFO
         <img class="link-carat" :src="alertCarat" />
       </a>
     </div>
@@ -79,7 +79,7 @@ html {
   justify-content: center;
   color: white;
   font-weight: bold;
-  padding: 10px;
+  padding: 8px;
 }
 
 .alert .button {
@@ -130,7 +130,7 @@ html {
 
 .button {
   border: 1px solid #444;
-  padding: 10px;
+  padding: 8px;
   background: none;
   text-transform: uppercase;
   min-width: 100px;
@@ -146,7 +146,7 @@ html {
 }
 
 .button.white {
-  border-color: silver;
+  border: none;
   background: white;
 }
 </style>
