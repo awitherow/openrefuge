@@ -9,27 +9,27 @@ export default new Router({
         {
             path: '/',
             name: 'hello',
-            component: require('components/views/Hello/'),
+            component: require('../views/Hello/'),
         },
         {
             path: '/find-help',
             name: 'find-help',
-            component: require('components/views/Find/'),
+            component: require('../views/Find/'),
         },
         {
             path: '/get-involved',
             name: 'get-involved',
-            component: require('components/views/Involve'),
+            component: require('../views/Involve'),
         },
         {
             path: '/about',
             name: 'About',
-            component: require('components/views/About'),
+            component: require('../views/About'),
         },
         {
             path: '*',
             name: '404',
-            component: require('components/views/Hello'),
+            component: require('../views/Hello'),
         },
     ],
 });
