@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import SiteHeader from './components/elements/SiteHeader'
+import SiteHeader from './components/SiteHeader'
 export default {
   name: 'app',
   components: {
