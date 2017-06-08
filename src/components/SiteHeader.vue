@@ -1,17 +1,13 @@
 <template>
   <div class="header">
     <div class="container">
-      <router-link exact
-                   to="/">
-        <img src="static/logo.png"
-             class="logo"
-             alt="OpenRefuge logo" />
+      <router-link exact to="/">
+        <img src="static/logo.png" class="logo" alt="OpenRefuge logo" />
       </router-link>
       <nav>
         <ul class="site-links">
           <li v-for="item in linkList">
-            <router-link exact
-                         :to="item.to">{{ item.text }}</router-link>
+            <router-link exact :to="item.to">{{ item.text }}</router-link>
           </li>
         </ul>
       </nav>
@@ -65,7 +61,7 @@ export default {
 }
 
 .logo {
-  height: 30px;
+  height: 64px;
   margin-right: 10px;
 }
 
