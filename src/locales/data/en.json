@@ -51,21 +51,21 @@
       ]
     },
     {
-      "name": "Athens Refuge Hotel",
+      "name": "Housing Assistance Program",
       "description": [
-        "Greatly inspired by the story of the <a target='_blank' href='https://www.irinnews.org/feature/2016/05/06/welcome-city-plaza-greece’s-refugee-hotel'>City Plaza Hotel</a>, we want to provide even more opportunity for open housing for refugees in need. In Athens, rent for a hotel is extremely cheap per month.",
-        "It is our goal to buy one of these hotels and turn it into an open refuge that provides quality shelter, food, water and meaning for refugees in Athens, Greece."
+        "In the midst of this journey, we have continuously run up against the housing situation. There are currently an estimated 67,000 refugees in Greece and 11,000 of them are said to be homeless.",
+        "Our first initiative is to develop a housing assistance program that helps place vulnerable families and persons in apartments. We can lease apartments 200 to 300 euros per month."
       ],
       "img": "static/athens-hotel-sketch.jpg",
       "buttons": [
         {
-          "link": "https://goo.gl/4xOL4t",
-          "text": "See The Plan",
+          "link": "https://goo.gl/03U9jS",
+          "text": "Learn more about the plan!",
           "class": "button green"
         },
         {
-          "link": "https://goo.gl/forms/gnr2yPCctgo9aG1L2",
-          "text": "Provide Your Skills",
+          "link": "https://goo.gl/SMUHtz",
+          "text": "Make a donation",
           "class": "button"
         }
       ]
