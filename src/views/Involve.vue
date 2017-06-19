@@ -21,7 +21,7 @@
         <li><a target="_blank"
              href="https://medium.com/@jeffsaferite/hey-friends-3de36842c17c#.itgp4yjfv">Hey Friends!</a></li>
         <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: May 11-19, 2017.</li>
+             href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: September 22-29, 2017.</li>
         <li><a target="_blank"
              href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a></li>
       </ul>
