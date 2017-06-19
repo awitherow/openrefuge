@@ -4,7 +4,7 @@
     <site-header />
     <div class="alert">
       June 20th: World Refugee Day Fundraiser in Arlington, Virginia.
-      <a class="button white" target="_blank" href="https://www.eventbrite.com/e/try-syrian-cuisine-and-support-refugees-on-world-refugee-day-tickets-35140473101">MORE INFO
+      <a class="button white" target="_blank" href="https://www.facebook.com/OpenRefugeOrg/">MORE INFO
         <img class="link-carat" :src="alertCarat" />
       </a>
     </div>
