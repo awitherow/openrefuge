@@ -12,7 +12,7 @@ The aim of this site is to create a portal for refugees to find information they
 
 ## development
 
-If you would like to work on this, please shoot me an email: contactopenrefuge@gmail.com
+If you would like to work on this, please shoot me an email: austin@openrefuge.org
 
 ## contributing
 
