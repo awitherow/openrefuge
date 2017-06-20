@@ -3,10 +3,7 @@
     <div class="background"></div>
     <site-header />
     <div class="alert">
-      June 20th: World Refugee Day Fundraiser in Arlington, Virginia.
-      <a class="button white" target="_blank" href="https://www.facebook.com/OpenRefugeOrg/">MORE INFO
-        <img class="link-carat" :src="alertCarat" />
-      </a>
+      <mail-chimp />
     </div>
     <transition name="fade">
       <router-view></router-view>
@@ -16,10 +13,12 @@
 
 <script>
 import SiteHeader from './components/SiteHeader'
+import MailChimp from './components/MailChimp'
 export default {
   name: 'app',
   components: {
     'site-header': SiteHeader,
+    'mail-chimp': MailChimp,
   },
   data: function () {
     return {
