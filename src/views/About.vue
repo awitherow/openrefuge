@@ -7,9 +7,9 @@
 
     <h1>Active Contributors</h1>
     <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply
-      <a href="mailto:contactopenrefuge@gmail.com?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
+      <a href="mailto:contact@openrefuge.org?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
     <div class="people">
-      <div v-for="person in people" class="person">
+      <div v-for="person in shuffledPeople" class="person">
         <img :src="person.photo" />
         <h3>{{ person.name }}</h3>
         <p v-html="person.description" />
@@ -19,6 +19,25 @@
 </template>
 
 <script>
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 export default {
   name: 'hello',
   data() {
@@ -64,8 +83,18 @@ export default {
           photo: 'static/adam.jpg',
           name: 'Adam',
           description: 'Voice of his generation, most influential unpublished author EVER. Writes at OpenRefuge who also helps with business management. Is also at least 5% fluent in Spanish, has deep blue eyes and lawyer friends.'
+        },
+        {
+          photo: 'static/jessica.jpg',
+          name: 'Jessica',
+          description: 'Full-time user and part-time manager of social media. Enjoys long walks on the beach and being incredibly philanthropic.'
         }
       ]
+    }
+  },
+  computed: {
+    shuffledPeople() {
+      return shuffle(this.people)
     }
   }
 }
