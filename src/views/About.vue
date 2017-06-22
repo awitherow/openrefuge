@@ -43,7 +43,7 @@ export default {
         {
           photo: 'static/austin.jpg',
           name: 'Austin',
-          description: 'Technical lead for development and planning at OpenRefuge, as well as Project Manager for our entire cause.'
+          description: 'That introverted computer guy, possible crazy.'
         },
         {
           photo: 'static/kim.jpg',
