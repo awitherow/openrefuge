@@ -1,17 +1,15 @@
 <template>
-  <div id="about"
-       class="container">
+  <div id="about" class="container">
     <h1>Our Mission</h1>
     <div class="mission">
-      <p v-for="paragraph in paragraphs"
-         v-html="paragraph" />
+      <p v-for="paragraph in paragraphs" v-html="paragraph" />
     </div>
 
     <h1>Active Contributors</h1>
-    <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply <a href="mailto:contactopenrefuge@gmail.com?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
+    <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply
+      <a href="mailto:contactopenrefuge@gmail.com?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
     <div class="people">
-      <div v-for="person in people"
-           class="person">
+      <div v-for="person in people" class="person">
         <img :src="person.photo" />
         <h3>{{ person.name }}</h3>
         <p v-html="person.description" />
@@ -50,7 +48,7 @@ export default {
         {
           photo: 'static/kim.jpg',
           name: 'Kim',
-          description: 'Kim helps greatly with investigative journaling and keeping you up to date with what OpenRefuge is working on, as well as what is going on in the world via our social media platforms.'
+          description: 'Kim is just a girl, standing in front of a volunteer-based humanitarian organisation, helping it update its Facebook status.'
         },
         {
           photo: 'static/adrian.jpg',
