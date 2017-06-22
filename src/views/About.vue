@@ -43,7 +43,7 @@ export default {
         {
           photo: 'static/austin.jpg',
           name: 'Austin',
-          description: 'That introverted computer guy, possible crazy.'
+          description: 'That introverted computer guy, possibly crazy.'
         },
         {
           photo: 'static/kim.jpg',
