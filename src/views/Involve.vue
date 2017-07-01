@@ -1,20 +1,29 @@
 <template>
   <div id="involvement" class="container">
     <div class="involvement-item">
-      <h2>Learn</h2>
+      <h2>From our Blog</h2>
       <p>Below are some great articles that highlight the issues occuring in Syria and the Middle East, the origin of the refugee crisis and how it affects Greece, Europe and the World.</p>
-      <div class="articles">
-        <div class="article" v-if="articles.length" v-bind:key="article.pubDate" v-for="article in articles">
-          <h3>{{ article.title }}</h3>
-          <h4>
-            <strong>{{ article.author }}</strong> on {{ transformDate(article.pubDate) }}</h4>
-          <div class="description" v-html="article.description" />
-          <div class="link-float-right">
-            <a class="link" target="_blank" :href="article.link">Read more on Medium</a>
+
+      <transition name="fade">
+        <div v-if="!loading" class="articles">
+          <div class="article" v-bind:key="article.pubDate" v-for="article in articles">
+            <h3>{{ article.title }}</h3>
+            <h4>
+              <strong>{{ article.author }}</strong> on {{ transformDate(article.pubDate) }}</h4>
+            <div class="description" v-html="article.description" />
+            <div class="link-float-right">
+              <a class="link" target="_blank" :href="article.link">Read the full post</a>
+            </div>
+            <hr />
           </div>
-          <hr />
         </div>
-      </div>
+      </transition>
+
+      <h3>
+        Read the rest of our articles
+        <a href="https://medium.com/openrefuge/">on our Blog</a>.
+      </h3>
+
     </div>
     <div class="involvement-item">
       <h2>Join a Mission</h2>
@@ -70,7 +79,6 @@ function getArticlesFromMedium(cb) {
         description: $this.find("description").text(),
         link: $this.find("link").text()
       }
-      console.log('ARTICLES', articles)
       articles.push(article)
     });
     cb(articles)
@@ -81,7 +89,7 @@ export default {
   name: 'hello',
   data: function () {
     return {
-      loading: false,
+      loading: true,
       articles: null
     }
   },
@@ -90,14 +98,10 @@ export default {
   },
   methods: {
     getArticles() {
-      this.loading = true
       getArticlesFromMedium((articles) => {
-        const MAX_ARTICLES = 5
+        const MAX_ARTICLES = 4
         this.articles = articles.slice(0, MAX_ARTICLES)
-
-        if (articles.legnth > MAX_ARTICLES) {
-          // TODO: show 'read more'
-        }
+        this.loading = false
       })
     },
     transformDate: (date) => moment(date).format('MMMM Do YYYY')
