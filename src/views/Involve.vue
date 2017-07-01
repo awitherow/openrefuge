@@ -1,62 +1,144 @@
 <template>
-  <div id="involvement"
-       class="container">
+  <div id="involvement" class="container">
     <div class="involvement-item">
       <h2>Learn</h2>
       <p>Below are some great articles that highlight the issues occuring in Syria and the Middle East, the origin of the refugee crisis and how it affects Greece, Europe and the World.</p>
-      <ul>
-        <li><a target="_blank"
-             href="https://savagedconscience.wordpress.com/">Savaged Conscience</a>, reflections on the Refugee Crisis and its impact on a savaged conscience.</li>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge/hope-for-the-children-of-war-e8a487308248">Hope for the Children of War</a>, another account of the side effects of greed for oil.</li>
-        <li><a target="_blank"
-             href="https://medium.com/@TulsiGabbard/the-syrian-people-desperately-want-peace-e308f1777a34#.hg4v7j3ck">The Syrian People Desparately Want Peace</a>, House of Representatives Tulsi Gabbard reflects on her visit to Syria.</li>
-      </ul>
+      <div class="articles">
+        <div class="article" v-if="articles.length" v-bind:key="article.pubDate" v-for="article in articles">
+          <h3>{{ article.title }}</h3>
+          <h4>
+            <strong>{{ article.author }}</strong> on {{ transformDate(article.pubDate) }}</h4>
+          <div class="description" v-html="article.description" />
+          <div class="link-float-right">
+            <a class="link" target="_blank" :href="article.link">Read more on Medium</a>
+          </div>
+          <hr />
+        </div>
+      </div>
     </div>
     <div class="involvement-item">
       <h2>Join a Mission</h2>
       <p>We are actively visiting Greece to connect with organizations on the ground both to assist them through OpenRefuge and to provide first hand experience to those who come with us.</p>
       <p>If you are interested, check the links below.</p>
       <ul>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/hey-friends-3de36842c17c#.itgp4yjfv">Hey Friends!</a></li>
-        <li><a target="_blank"
-             href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: September 22-29, 2017.</li>
-        <li><a target="_blank"
-             href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a></li>
+        <li>
+          <a target="_blank" href="https://medium.com/@jeffsaferite/hey-friends-3de36842c17c#.itgp4yjfv">Hey Friends!</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://medium.com/@jeffsaferite/662843af5c8e">Adventure Guidelines.</a> Next: September 22-29, 2017.</li>
+        <li>
+          <a target="_blank" href="https://goo.gl/forms/38GU10tYVbXZsevh2">Sign up now!</a>
+        </li>
       </ul>
     </div>
     <div class="involvement-item">
       <h2>Keep Up to Date</h2>
       <p>To help spread the word about OpenRefuge, we are taking an active stance to keep you updated through all of the most popular social media outlets, so we can help serve you.</p>
       <ul>
-        <li><a target="_blank"
-             href="https://medium.com/openrefuge">Medium</a>, an open blogging platform.</li>
-        <li><a target="_blank"
-             href="https://www.patreon.com/openrefuge">Patreon</a>, our donation platform.</li>
-        <li><a target="_blank"
-             href="https://twitter.com/openrefuge">Twitter</a></li>
-        <li><a target="_blank"
-             href="https://www.facebook.com/OpenRefugeOrg/">Facebook</a></li>
-        <li><a target="_blank"
-             href="https://www.instagram.com/openrefuge/">Instagram</a></li>
+        <li>
+          <a target="_blank" href="https://medium.com/openrefuge">Medium</a>, an open blogging platform.</li>
+        <li>
+          <a target="_blank" href="https://www.patreon.com/openrefuge">Patreon</a>, our donation platform.</li>
+        <li>
+          <a target="_blank" href="https://twitter.com/openrefuge">Twitter</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/OpenRefugeOrg/">Facebook</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/openrefuge/">Instagram</a>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import $ from 'jquery'
+import moment from 'moment'
+
+function getArticlesFromMedium(cb) {
+  $.get("https://medium.com/feed/openrefuge?truncated=true", function (data) {
+    const $xml = $(data)
+    let articles = []
+    $xml.find("item").each(function () {
+      const $this = $(this)
+      const article = {
+        title: $this.find("title").text(),
+        pubDate: $this.find("pubDate").text(),
+        author: $this.find("creator").text(),
+        description: $this.find("description").text(),
+        link: $this.find("link").text()
+      }
+      console.log('ARTICLES', articles)
+      articles.push(article)
+    });
+    cb(articles)
+  });
+}
+
 export default {
   name: 'hello',
-  data() {
-    return {}
+  data: function () {
+    return {
+      loading: false,
+      articles: null
+    }
+  },
+  created() {
+    this.getArticles()
+  },
+  methods: {
+    getArticles() {
+      this.loading = true
+      getArticlesFromMedium((articles) => {
+        const MAX_ARTICLES = 5
+        this.articles = articles.slice(0, MAX_ARTICLES)
+
+        if (articles.legnth > MAX_ARTICLES) {
+          // TODO: show 'read more'
+        }
+      })
+    },
+    transformDate: (date) => moment(date).format('MMMM Do YYYY')
   }
 }
 </script>
 
-<style scoped>
+<style>
 #involvement {
   text-align: justify;
+}
+
+.article {
+  text-align: left;
+}
+
+.article h3 {
+  margin-bottom: 0;
+}
+
+.article h4 {
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.article hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lightgray;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.medium-feed-image img {
+  width: 90vw;
+}
+
+.medium-feed-link {
+  display: none;
 }
 
 @media(min-width: 375px) {
@@ -73,7 +155,57 @@ export default {
 
 @media(min-width: 768px) {
   #involvement {
+    padding-left: 48px;
+    padding-right: 48px;
     padding-top: 0;
+  }
+
+  .medium-feed-image img {
+    width: 690px;
+  }
+}
+
+@media(min-width: 768px) {
+  #involvement {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 0;
+  }
+
+  .medium-feed-item {
+    display: flex;
+  }
+
+  .medium-feed-image {
+    margin: 0;
+  }
+
+  .medium-feed-image img {
+    width: 350px;
+    margin-right: 16px;
+  }
+
+  .medium-feed-snippet {
+    max-height: 75px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .article {
+    position: relative;
+    margin-bottom: 32px;
+    margin: 0 auto;
+  }
+
+  .article .link-float-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -32px;
+  }
+
+  .article .link {
+    text-align: right;
+    width: 100%;
   }
 }
 </style>

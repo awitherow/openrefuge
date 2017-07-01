@@ -29,7 +29,6 @@ export default {
     togglePartner(id) {
       this.partnerId = id
       this.overlayVisible = !this.overlayVisible
-      console.log(this.partnerId, this.overlayVisible)
     }
   }
 }
