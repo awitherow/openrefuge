@@ -67,22 +67,26 @@ import $ from 'jquery'
 import moment from 'moment'
 
 function getArticlesFromMedium(cb) {
-  $.get("https://medium.com/feed/openrefuge?truncated=true", function (data) {
-    const $xml = $(data)
-    let articles = []
-    $xml.find("item").each(function () {
-      const $this = $(this)
-      const article = {
-        title: $this.find("title").text(),
-        pubDate: $this.find("pubDate").text(),
-        author: $this.find("creator").text(),
-        description: $this.find("description").text(),
-        link: $this.find("link").text()
-      }
-      articles.push(article)
-    });
-    cb(articles)
-  });
+  $.ajax({
+    url: "https://medium.com/feed/openrefuge?truncated=true",
+    crossDomain: true,
+    success: function (data) {
+      const $xml = $(data)
+      let articles = []
+      $xml.find("item").each(function () {
+        const $this = $(this)
+        const article = {
+          title: $this.find("title").text(),
+          pubDate: $this.find("pubDate").text(),
+          author: $this.find("creator").text(),
+          description: $this.find("description").text(),
+          link: $this.find("link").text()
+        }
+        articles.push(article)
+      });
+      cb(articles)
+    }
+  })
 }
 
 export default {
