@@ -60,12 +60,12 @@
       "buttons": [
         {
           "link": "https://goo.gl/03U9jS",
-          "text": "Learn more about the plan!",
+          "text": "Learn more",
           "class": "button green"
         },
         {
           "link": "https://goo.gl/SMUHtz",
-          "text": "Make a donation",
+          "text": "Donate now",
           "class": "button"
         }
       ]
