@@ -36,7 +36,7 @@
   },
   "projects": [
     {
-      "name": "Save Manni",
+      "name": "Medical Care for Manni",
       "description": [
         "A young boy, Manni, suffers in a life critical condition in need of full body reconstructive surgery. Saving his life will be easy if we work together. An estimated $30,000 is needed to conduct this surgery and we are already 1/5th of the way there!",
         "Most importantly, <strong>ALL FUNDS</strong> in this project go directly to Mannis surgery and rehabilitation. There are <strong>absolutely no hidden agendas</strong>. We are doing this for the people and by the people, the right way."
@@ -60,12 +60,12 @@
       "buttons": [
         {
           "link": "https://goo.gl/03U9jS",
-          "text": "Learn more about the plan!",
+          "text": "Learn more",
           "class": "button green"
         },
         {
           "link": "https://goo.gl/SMUHtz",
-          "text": "Make a donation",
+          "text": "Donate now",
           "class": "button"
         }
       ]

@@ -79,7 +79,7 @@ export default {
 }
 
 .project-showcase h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .projects {
