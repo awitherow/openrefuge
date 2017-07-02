@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <div class="background"></div>
-    <site-header />
-    <div class="alert">
-      <mail-chimp />
-    </div>
+    <site-header></site-header>
+    <transition name="slideUpOut fade">
+      <div class="alert" v-if="mailPromptVisible">
+        <mail-chimp :toggle="toggleMailPrompt"></mail-chimp>
+      </div>
+    </transition>
     <transition name="fade">
       <router-view></router-view>
     </transition>
@@ -22,7 +23,12 @@ export default {
   },
   data: function () {
     return {
-      'alertCarat': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAADTUlEQVR4Xu2dwW0TQRiFXziDxBXEnQN3WqACeuBKBSRFcKISDogrEg1QABVQAdpgK2tnvZ5ZE9D835fzrJX33pc3k5mxfRV/0A5codUrPgIAh0AABADuAFy+DSAAcAfg8m0AAYA7AJdvAwgA3AG4fBtAAOAOwOXbAAIAdwAu3wYQALgDcPk2gADAHYDLtwEEAO4AXL4NIABwB+DybQABgDsAl28DCADcAbh8G0AA4A7A5dsAAgB3AC6/YgM8TfI2ySd4tk3yqwEwhf85yeskN0mum1wAD6oEwDz8faRCcAbuKgAshS8EDc1WAYC18IWgeAO0hC8EKxCM3AA94QvBCQhGBeBxki+71X7DTHcwxIXhzI5RAXiU5GOSd73p78YLwc6IUQGYfn0h2Ej//LGRARACAbh1wCa4AITRG2AvXQg2QlAFAJtAAJwOtjBQqQGcDjYQUBEAp4MOEKoCIASNEFQGQAgaIKgOgBCcgYAAgBCsQEABQAhOQEACQAgWIKABIARHEBABEIIZBFQAhGAHARkAIUj83kD6fQJ6A+APkATgbkGEvFQiAIf/FuEgEID7myMoCARgeYv0eZIfSZ40HKgdD/mV5FWSnxue/eePCMB9y58l+Zrk5YY0pvDfJPm24dn/8ogAHNqOCn+SLgB3AODCFwB4+ALwBwDkX/6effoUgA6f3gD48MkAGD74ONjwwRdCDP9ou4m0CDT8hb1GCgCGf2KjmQCA4a+cMlQHwPDPHDFVBsDwG84XqwJg+A3hV90IMvzG8CsCYPgd4VcDwPA7w68EgOFvCL8KAIa/MfwKABj+BeGPDoDhXxj+yABM9/W/U65u/4WcT77EyBtB03cCfug0Z7h7+536uoePDMAktgcCwy96HNwCgeEXPw5eg8DwIcfBSxAYPuw4eA6B4TcsCUdfBC5JnCB4P9q7dBuyepAhFQGYjHoxyvvzHyTVjhetCkCHBeyhAsDO388HgOcvAAJAdwCu3zWAAMAdgMu3AQQA7gBcvg0gAHAH4PJtAAGAOwCXbwMIANwBuHwbQADgDsDl2wACAHcALt8GEAC4A3D5NoAAwB2Ay7cBBADuAFy+DSAAcAfg8m0AAYA7AJdvAwgA3AG4fBsADsBvCkmfgXvDJRAAAAAASUVORK5CYII='
+      mailPromptVisible: true,
+    }
+  },
+  methods: {
+    toggleMailPrompt() {
+      this.mailPromptVisible = !this.mailPromptVisible
     }
   }
 }
@@ -125,6 +131,21 @@ html {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideUpOut-leave-active {
+  animation: slideOutUp 0.5s;
 }
 
 .button {
