@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <site-header></site-header>
+    <div class="background"></div>
     <transition name="slideUpOut fade">
       <div class="alert" v-if="mailPromptVisible">
         <mail-chimp :toggle="toggleMailPrompt"></mail-chimp>
@@ -56,17 +57,6 @@ html {
   z-index: -1;
 }
 
-.background:after {
-  background-image: linear-gradient(to bottom right, #fff, #fff);
-  content: '';
-  position: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: .9;
-}
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -100,10 +90,11 @@ html {
 }
 
 .container {
-  height: 100%;
+  position: relative;
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 24px;
+  background: white;
 }
 
 .container--full {

@@ -1,6 +1,8 @@
 <template>
   <div id="hello" class="container">
 
+    <div class="background"></div>
+
     <div class="introduction">
       <h1>{{ $t("brand.title") }}</h1>
       <h2>{{ $t("brand.subtitle") }}</h2>
@@ -49,8 +51,11 @@ export default {
 </script>
 
 <style scoped>
-.introduction {
-  margin: 50px 0 25px 0;
+.background {
+  background: url(../../../static/help.jpg) no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  height: 200px;
 }
 
 .introduction h1 {
@@ -79,7 +84,7 @@ export default {
 }
 
 .project-showcase h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .projects {

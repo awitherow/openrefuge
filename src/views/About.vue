@@ -132,23 +132,7 @@ h2 {
   text-align: left;
 }
 
-@media(min-width: 375px) {
-  #about {
-    padding-top: 65px;
-  }
-}
-
-@media(min-width: 425px) {
-  #about {
-    padding-top: 40px;
-  }
-}
-
 @media(min-width: 768px) {
-  #about {
-    padding-top: 0;
-  }
-
   .people {
     flex-direction: row;
     align-items: flex-start;
