@@ -9,6 +9,9 @@
           <li v-bind:key="item.to" v-for="item in linkList">
             <router-link exact :to="item.to">{{ item.text }}</router-link>
           </li>
+          <li>
+            <a target="_blank" href="https://medium.com/openrefuge">Our Blog</a>
+          </li>
         </ul>
         <ul class="social-media">
           <li v-bind:key="media.to" v-for="media in socialMediaSites">
@@ -28,10 +31,6 @@ export default {
   data() {
     return {
       socialMediaSites: [
-        {
-          site: 'medium',
-          to: 'https://medium.com/openrefuge'
-        },
         {
           site: 'facebook',
           to: 'https://www.facebook.com/OpenRefuge/'
