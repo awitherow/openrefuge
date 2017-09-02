@@ -1,13 +1,25 @@
 <template>
   <div id="about" class="container">
-    <h1>Our Mission</h1>
     <div class="mission">
-      <p v-for="paragraph in paragraphs" v-html="paragraph" />
+      <div>
+        <h1>Our Mission</h1>
+        <p v-for="paragraph in paragraphs" v-html="paragraph" />
+      </div>
+
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <label>Name</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="text" />
+        <label>Interest</label>
+        <textarea/>
+        <button class="button green">Send</button>
+      </div>
     </div>
 
     <h1>Active Contributors</h1>
-    <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way. Just simply
-      <a href="mailto:contact@openrefuge.org?Subject=I%20want%20to%20help.">write us an email</a> with how you would like to help out!</p>
+    <p>All the work we do is from our heart. We make truly make no profit here at OpenRefuge, all we do is done in our spare time. We are here to help bring peace to the Refugee Crisis. Anyone is free to join in any way! Fill out the form above and let us know how you can best help!</p>
     <div class="people">
       <div v-for="person in shuffledPeople" class="person">
         <img :src="person.photo" />
@@ -105,6 +117,33 @@ export default {
   text-align: justify;
 }
 
+.mission {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission h2 {
+  text-align: left;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column
+}
+
+.contact-us label {
+  margin-bottom: 4px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  margin-bottom: 12px;
+  min-height: 32px;
+  padding: 8px;
+  border: 1px solid #2c3e50;
+  background-color: rgba(255, 255, 255, 0.75)
+}
+
 .people {
   display: flex;
   align-items: center;
@@ -149,10 +188,27 @@ h2 {
     padding-top: 0;
   }
 
+  .mission {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .contact-us {
+    min-width: 350px;
+    margin: 12px 0 0 32px;
+  }
+  .contact-us textarea {
+    min-height: 100px;
+  }
+
   .people {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .person p {
+    text-align: center;
   }
 
   .person img {
